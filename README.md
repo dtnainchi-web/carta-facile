@@ -82,8 +82,11 @@ dependencies {
 
 ```bash
 supabase functions deploy explain-letter
+supabase functions deploy write-letter
 supabase secrets set ANTHROPIC_API_KEY=sk-ant-...
 ```
+
+بدون هذه الإعدادات، المسح وكتابة الرسائل يعرضان نتيجة تجريبية مكتوب عليها DEMO.
 
 ثم شغّل التطبيق مع عنوان المشروع:
 ```bash
@@ -97,4 +100,5 @@ flutter run \
 - استبدال معرّفات AdMob التجريبية بمعرّفاتك (`widgets/ad_banner.dart` و Manifest و Info.plist).
 - مراجعة محتوى `guides.json` من طرف شخص يعرف الإجراءات الإيطالية.
 - صفحة سياسة الخصوصية وصفحة الدعم (على cvprontoitalia.com).
+- كتابة الرسائل بالذكاء الاصطناعي غير محدودة حاليًا؛ يجب إضافة حد مجاني أو جعلها في الاشتراك.
 - الاشتراك المدفوع (النسخة القادمة): حاليًا `isPremium` دائمًا false، وحد المسح المجاني (3 في الشهر) محفوظ في الهاتف فقط، ويجب نقله إلى الخادم لاحقًا.

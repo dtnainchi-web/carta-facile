@@ -14,6 +14,7 @@ class TrackedDate {
     required this.date,
     this.place = '',
     this.isPermit = false,
+    this.kind = '',
   });
 
   final int id;
@@ -21,6 +22,9 @@ class TrackedDate {
   final DateTime date;
   final String place;
   final bool isPermit;
+
+  /// Document type from "My documents" (passport, id, licence…), or ''.
+  final String kind;
 
   int get daysLeft {
     final now = DateTime.now();
@@ -35,6 +39,7 @@ class TrackedDate {
         'date': date.toIso8601String(),
         'place': place,
         'isPermit': isPermit,
+        'kind': kind,
       };
 
   factory TrackedDate.fromJson(Map<String, dynamic> j) => TrackedDate(
@@ -43,6 +48,7 @@ class TrackedDate {
         date: DateTime.parse(j['date'] as String),
         place: (j['place'] ?? '') as String,
         isPermit: (j['isPermit'] ?? false) as bool,
+        kind: (j['kind'] ?? '') as String,
       );
 }
 
@@ -63,6 +69,7 @@ class AppState extends ChangeNotifier {
 
   List<TrackedDate> dates = [];
   Set<String> completedLessons = {};
+  Set<String> checkedItems = {}; // "guideId:index"
   Set<int> reminderOffsets = {60, 30};
   bool isPremium = false; // set by the subscription flow (next version)
   int _scansUsed = 0;
@@ -90,6 +97,7 @@ class AppState extends ChangeNotifier {
       _sortDates();
     }
     completedLessons = (_prefs.getStringList('completedLessons') ?? []).toSet();
+    checkedItems = (_prefs.getStringList('checkedItems') ?? []).toSet();
     final offsets = _prefs.getStringList('reminderOffsets');
     if (offsets != null) reminderOffsets = offsets.map(int.parse).toSet();
     isPremium = _prefs.getBool('isPremium') ?? false;
@@ -118,9 +126,17 @@ class AppState extends ChangeNotifier {
     return null;
   }
 
+  TrackedDate? dateOfKind(String kind) {
+    for (final d in dates) {
+      if (d.kind == kind) return d;
+    }
+    return null;
+  }
+
   Future<void> saveDate(TrackedDate date) async {
     dates.removeWhere((d) => d.id == date.id);
     if (date.isPermit) dates.removeWhere((d) => d.isPermit);
+    if (date.kind.isNotEmpty) dates.removeWhere((d) => d.kind == date.kind);
     dates.add(date);
     _sortDates();
     await _persistDates();
@@ -151,6 +167,13 @@ class AppState extends ChangeNotifier {
 
   Future<void> _persistDates() => _prefs.setString(
       'dates', jsonEncode(dates.map((d) => d.toJson()).toList()));
+
+  // ---------- checklists ----------
+  Future<void> toggleChecked(String key) async {
+    checkedItems.contains(key) ? checkedItems.remove(key) : checkedItems.add(key);
+    await _prefs.setStringList('checkedItems', checkedItems.toList());
+    notifyListeners();
+  }
 
   // ---------- lessons ----------
   Future<void> completeLesson(String id) async {

@@ -7,6 +7,8 @@ import '../core/theme.dart';
 import '../widgets/ad_banner.dart';
 import '../widgets/common.dart';
 import 'guide_screens.dart';
+import 'letter_screen.dart';
+import 'tools_screens.dart';
 import 'shell.dart';
 import 'tracker_screen.dart';
 
@@ -61,6 +63,34 @@ class HomeScreen extends StatelessWidget {
                   onPressed: () => currentTab.value = Tabs.scan,
                   icon: const Icon(Icons.document_scanner_outlined),
                   label: Text(tr('scan_cta')),
+                ),
+                const SizedBox(height: 12),
+                SectionTitle(tr('tools')),
+                GridView.count(
+                  crossAxisCount: 2,
+                  shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(),
+                  mainAxisSpacing: 12,
+                  crossAxisSpacing: 12,
+                  childAspectRatio: 2.3,
+                  children: [
+                    _ToolTile(
+                        icon: Icons.fact_check_outlined,
+                        label: tr('tool_status'),
+                        page: const PermitStatusScreen()),
+                    _ToolTile(
+                        icon: Icons.edit_note,
+                        label: tr('tool_letter'),
+                        page: const LetterScreen()),
+                    _ToolTile(
+                        icon: Icons.place_outlined,
+                        label: tr('tool_offices'),
+                        page: const OfficesScreen()),
+                    _ToolTile(
+                        icon: Icons.folder_shared_outlined,
+                        label: tr('tool_wallet'),
+                        page: const WalletScreen()),
+                  ],
                 ),
                 const SizedBox(height: 12),
                 SectionTitle(tr('documents')),
@@ -180,6 +210,45 @@ class _PermitCountdown extends StatelessWidget {
         Text('${tr('expires_on')} ${formatDate(context, permit.date)}',
             style: text.bodySmall?.copyWith(color: const Color(0xFFC9D8E8))),
       ],
+    );
+  }
+}
+
+class _ToolTile extends StatelessWidget {
+  const _ToolTile({required this.icon, required this.label, required this.page});
+  final IconData icon;
+  final String label;
+  final Widget page;
+
+  @override
+  Widget build(BuildContext context) {
+    final text = Theme.of(context).textTheme;
+    return Card(
+      clipBehavior: Clip.antiAlias,
+      child: InkWell(
+        onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => page)),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 12),
+          child: Row(
+            children: [
+              Container(
+                width: 36,
+                height: 36,
+                decoration: BoxDecoration(
+                    color: AppColors.primarySoft, borderRadius: BorderRadius.circular(10)),
+                child: Icon(icon, color: AppColors.primary, size: 20),
+              ),
+              const SizedBox(width: 10),
+              Expanded(
+                child: Text(label,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    style: text.labelLarge?.copyWith(fontWeight: FontWeight.w600)),
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }

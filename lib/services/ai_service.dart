@@ -35,6 +35,14 @@ class LetterExplanation {
       );
 }
 
+/// An Italian letter written for the user, plus what it says in their language.
+class LetterDraft {
+  LetterDraft({required this.italian, required this.meaning, this.isDemo = false});
+  final String italian;
+  final String meaning;
+  final bool isDemo;
+}
+
 /// Sends the photo to our Supabase Edge Function "explain-letter", which
 /// calls the AI model. The AI key never lives in the app.
 ///
@@ -70,6 +78,50 @@ class AiService {
     }
     final data = jsonDecode(utf8.decode(response.bodyBytes)) as Map<String, dynamic>;
     return LetterExplanation.fromJson(data);
+  }
+
+  /// Writes a polite Italian letter from what the user typed in their language.
+  /// Uses the Edge Function "write-letter".
+  static Future<LetterDraft> writeLetter({
+    required String recipient,
+    required String message,
+    required String language,
+  }) async {
+    if (!isConfigured) {
+      await Future<void>.delayed(const Duration(seconds: 2));
+      return LetterDraft(
+        italian: 'Gentile Signor Rossi,\n\n'
+            'Le scrivo per segnalarLe che lo scaldabagno dell\'appartamento non '
+            'funziona da una settimana. Le chiedo cortesemente di farlo riparare '
+            'il prima possibile.\n\nResto a disposizione per concordare un orario.\n\n'
+            'Cordiali saluti,\n[Il tuo nome]',
+        meaning: language == 'ar'
+            ? 'رسالة مهذّبة لصاحب السكن تطلب إصلاح سخان الماء المعطّل منذ أسبوع، مع الاستعداد لتحديد موعد.'
+            : language == 'fr'
+                ? 'Une lettre polie au propriétaire demandant de réparer le chauffe-eau en panne depuis une semaine.'
+                : 'A polite letter asking the landlord to repair the water heater, broken for a week.',
+        isDemo: true,
+      );
+    }
+    final response = await http
+        .post(
+          Uri.parse('$_baseUrl/functions/v1/write-letter'),
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer $_anonKey',
+            'apikey': _anonKey,
+          },
+          body: jsonEncode({'recipient': recipient, 'message': message, 'language': language}),
+        )
+        .timeout(const Duration(seconds: 60));
+    if (response.statusCode != 200) {
+      throw Exception('write-letter failed: ${response.statusCode}');
+    }
+    final data = jsonDecode(utf8.decode(response.bodyBytes)) as Map<String, dynamic>;
+    return LetterDraft(
+      italian: (data['italian'] ?? '') as String,
+      meaning: (data['meaning'] ?? '') as String,
+    );
   }
 
   /// Sample result for the preview, clearly marked as a demo in the UI.

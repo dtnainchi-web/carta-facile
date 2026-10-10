@@ -20,6 +20,7 @@ class Guide {
     required this.italianName,
     required this.steps,
     this.tip,
+    this.checklist = const [],
   });
 
   final String id;
@@ -29,12 +30,16 @@ class Guide {
   final List<GuideStep> steps;
   final Localized? tip;
 
+  /// Documents to bring, each in the four languages.
+  final List<Localized> checklist;
+
   factory Guide.fromJson(Map<String, dynamic> j) => Guide(
         id: j['id'] as String,
         icon: j['icon'] as String,
         title: j['title'] as Localized,
         italianName: j['italianName'] as String,
         tip: j['tip'] as Localized?,
+        checklist: ((j['checklist'] ?? []) as List).cast<Localized>(),
         steps: (j['steps'] as List)
             .map((s) => GuideStep(
                   s['title'] as Localized,

@@ -87,6 +87,7 @@ class GuideDetailScreen extends StatelessWidget {
               step: guide.steps[i],
               isLast: i == guide.steps.length - 1,
             ),
+          if (guide.checklist.isNotEmpty) _Checklist(guide: guide),
           if (guide.tip != null) ...[
             const SizedBox(height: 8),
             Container(
@@ -112,6 +113,63 @@ class GuideDetailScreen extends StatelessWidget {
           const Disclaimer(),
         ],
       ),
+    );
+  }
+}
+
+/// "What to bring" list; ticks are saved on the phone.
+class _Checklist extends StatelessWidget {
+  const _Checklist({required this.guide});
+  final Guide guide;
+
+  @override
+  Widget build(BuildContext context) {
+    final text = Theme.of(context).textTheme;
+    return ListenableBuilder(
+      listenable: appState,
+      builder: (context, _) {
+        final keys = [for (var i = 0; i < guide.checklist.length; i++) '${guide.id}:$i'];
+        final done = keys.where(appState.checkedItems.contains).length;
+        return Padding(
+          padding: const EdgeInsets.only(bottom: 16),
+          child: Card(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 8),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(16, 8, 16, 4),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Text(tr('what_to_bring'),
+                              style: text.titleSmall?.copyWith(fontWeight: FontWeight.w700)),
+                        ),
+                        Pill('$done / ${keys.length}',
+                            background: done == keys.length
+                                ? AppColors.successSoft
+                                : AppColors.primarySoft,
+                            foreground: done == keys.length
+                                ? AppColors.success
+                                : AppColors.primary),
+                      ],
+                    ),
+                  ),
+                  for (var i = 0; i < guide.checklist.length; i++)
+                    CheckboxListTile(
+                      value: appState.checkedItems.contains(keys[i]),
+                      onChanged: (_) => appState.toggleChecked(keys[i]),
+                      controlAffinity: ListTileControlAffinity.leading,
+                      dense: true,
+                      title: Text(pick(guide.checklist[i]), style: text.bodyMedium),
+                    ),
+                ],
+              ),
+            ),
+          ),
+        );
+      },
     );
   }
 }

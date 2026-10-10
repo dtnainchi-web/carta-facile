@@ -11,7 +11,12 @@
     },
     "steps": [
       {
-        "title": {"ar": "اجمع الوثائق", "fr": "Rassemblez les documents", "it": "Prepara i documenti", "en": "Gather your documents"},
+        "title": {
+          "ar": "اجمع الوثائق",
+          "fr": "Rassemblez les documents",
+          "it": "Prepara i documenti",
+          "en": "Gather your documents"
+        },
         "body": {
           "ar": "جواز السفر، تصريح الإقامة الحالي، صور شخصية، والوثائق المتعلقة بسبب الإقامة (عقد عمل، دراسة، أسرة…).",
           "fr": "Passeport, titre de séjour actuel, photos d'identité et justificatifs du motif de séjour (travail, études, famille…).",
@@ -21,7 +26,12 @@
         "italianTerm": "Fototessere"
       },
       {
-        "title": {"ar": "احصل على الـ Kit من مكتب البريد", "fr": "Prenez le kit à la poste", "it": "Ritira il kit alle Poste", "en": "Get the kit at the post office"},
+        "title": {
+          "ar": "احصل على الـ Kit من مكتب البريد",
+          "fr": "Prenez le kit à la poste",
+          "it": "Ritira il kit alle Poste",
+          "en": "Get the kit at the post office"
+        },
         "body": {
           "ar": "الظرف متوفر مجانًا في مكاتب Poste Italiane التي تضم شباك Sportello Amico.",
           "fr": "L'enveloppe est gratuite dans les bureaux Poste Italiane avec un guichet Sportello Amico.",
@@ -31,7 +41,12 @@
         "italianTerm": "Kit postale"
       },
       {
-        "title": {"ar": "املأ الاستمارات", "fr": "Remplissez les formulaires", "it": "Compila i moduli", "en": "Fill in the forms"},
+        "title": {
+          "ar": "املأ الاستمارات",
+          "fr": "Remplissez les formulaires",
+          "it": "Compila i moduli",
+          "en": "Fill in the forms"
+        },
         "body": {
           "ar": "املأ الاستمارات الموجودة في الـ Kit بخط واضح. يمكنك طلب مساعدة مجانية من مكتب Patronato.",
           "fr": "Remplissez lisiblement les formulaires du kit. Un Patronato peut vous aider gratuitement.",
@@ -41,7 +56,12 @@
         "italianTerm": "Moduli"
       },
       {
-        "title": {"ar": "أرسل الملف وادفع الرسوم", "fr": "Envoyez le dossier et payez", "it": "Spedisci e paga", "en": "Send the file and pay"},
+        "title": {
+          "ar": "أرسل الملف وادفع الرسوم",
+          "fr": "Envoyez le dossier et payez",
+          "it": "Spedisci e paga",
+          "en": "Send the file and pay"
+        },
         "body": {
           "ar": "سلّم الظرف مفتوحًا في شباك البريد مع الطابع الجبائي، وادفع الرسوم. احتفظ بالإيصال جيدًا.",
           "fr": "Déposez l'enveloppe ouverte au guichet avec le timbre fiscal et payez les frais. Gardez bien le reçu.",
@@ -51,7 +71,12 @@
         "italianTerm": "Marca da bollo · Ricevuta"
       },
       {
-        "title": {"ar": "موعد البصمات في الـ Questura", "fr": "Rendez-vous empreintes à la Questura", "it": "Impronte in Questura", "en": "Fingerprints at the Questura"},
+        "title": {
+          "ar": "موعد البصمات في الـ Questura",
+          "fr": "Rendez-vous empreintes à la Questura",
+          "it": "Impronte in Questura",
+          "en": "Fingerprints at the Questura"
+        },
         "body": {
           "ar": "ستصلك رسالة نصية أو رسالة بموعد أخذ البصمات. احضر ومعك جواز السفر والإيصال والصور.",
           "fr": "Vous recevrez un SMS ou une lettre avec le rendez-vous. Venez avec passeport, reçu et photos.",
@@ -66,7 +91,45 @@
       "fr": "Faites la demande avant l'expiration. Vérifiez les délais exacts auprès de la Questura ou d'un Patronato.",
       "it": "Fai la domanda prima della scadenza. Verifica i tempi esatti con la Questura o un Patronato.",
       "en": "Apply before your permit expires. Check the exact deadlines with the Questura or a Patronato."
-    }
+    },
+    "checklist": [
+      {
+        "ar": "جواز السفر ونسخة منه",
+        "fr": "Passeport + copie",
+        "it": "Passaporto + fotocopia",
+        "en": "Passport + copy"
+      },
+      {
+        "ar": "تصريح الإقامة الحالي ونسخة منه",
+        "fr": "Titre de séjour actuel + copie",
+        "it": "Permesso attuale + fotocopia",
+        "en": "Current permit + copy"
+      },
+      {
+        "ar": "4 صور شخصية",
+        "fr": "4 photos d'identité",
+        "it": "4 fototessere",
+        "en": "4 passport photos"
+      },
+      {
+        "ar": "الطابع الجبائي (Marca da bollo)",
+        "fr": "Timbre fiscal (marca da bollo)",
+        "it": "Marca da bollo",
+        "en": "Revenue stamp (marca da bollo)"
+      },
+      {
+        "ar": "وثائق العمل أو الدراسة أو الأسرة",
+        "fr": "Justificatifs travail, études ou famille",
+        "it": "Documenti di lavoro, studio o famiglia",
+        "en": "Work, study or family documents"
+      },
+      {
+        "ar": "إثبات السكن",
+        "fr": "Justificatif de logement",
+        "it": "Documento sull'alloggio",
+        "en": "Proof of housing"
+      }
+    ]
   },
   {
     "id": "tessera-sanitaria",
@@ -80,7 +143,12 @@
     },
     "steps": [
       {
-        "title": {"ar": "حضّر الوثائق", "fr": "Préparez les documents", "it": "Prepara i documenti", "en": "Prepare your documents"},
+        "title": {
+          "ar": "حضّر الوثائق",
+          "fr": "Préparez les documents",
+          "it": "Prepara i documenti",
+          "en": "Prepare your documents"
+        },
         "body": {
           "ar": "تصريح الإقامة أو إيصال التجديد، الرمز الضريبي، وعنوان السكن.",
           "fr": "Titre de séjour ou reçu de renouvellement, code fiscal et adresse.",
@@ -90,7 +158,12 @@
         "italianTerm": "Codice fiscale"
       },
       {
-        "title": {"ar": "اذهب إلى مكتب الـ ASL", "fr": "Allez à l'ASL", "it": "Vai all'ASL", "en": "Go to the ASL office"},
+        "title": {
+          "ar": "اذهب إلى مكتب الـ ASL",
+          "fr": "Allez à l'ASL",
+          "it": "Vai all'ASL",
+          "en": "Go to the ASL office"
+        },
         "body": {
           "ar": "سجّل نفسك في مكتب التسجيل الصحي التابع للـ ASL في منطقتك.",
           "fr": "Inscrivez-vous au bureau d'inscription sanitaire de l'ASL de votre zone.",
@@ -100,7 +173,12 @@
         "italianTerm": "Anagrafe sanitaria"
       },
       {
-        "title": {"ar": "اختر طبيب الأسرة", "fr": "Choisissez votre médecin", "it": "Scegli il medico", "en": "Choose a family doctor"},
+        "title": {
+          "ar": "اختر طبيب الأسرة",
+          "fr": "Choisissez votre médecin",
+          "it": "Scegli il medico",
+          "en": "Choose a family doctor"
+        },
         "body": {
           "ar": "أثناء التسجيل تختار طبيب الأسرة من القائمة المتاحة.",
           "fr": "Lors de l'inscription, vous choisissez un médecin traitant dans la liste.",
@@ -110,7 +188,12 @@
         "italianTerm": "Medico di base"
       },
       {
-        "title": {"ar": "استلم البطاقة", "fr": "Recevez la carte", "it": "Ricevi la tessera", "en": "Receive the card"},
+        "title": {
+          "ar": "استلم البطاقة",
+          "fr": "Recevez la carte",
+          "it": "Ricevi la tessera",
+          "en": "Receive the card"
+        },
         "body": {
           "ar": "تصلك البطاقة الصحية عبر البريد إلى عنوانك.",
           "fr": "La carte de santé arrive par la poste à votre adresse.",
@@ -125,7 +208,33 @@
       "fr": "Mettez votre nom sur la boîte aux lettres pour recevoir la carte.",
       "it": "Metti il tuo nome sulla cassetta postale per ricevere la tessera.",
       "en": "Put your name on the mailbox so the card reaches you."
-    }
+    },
+    "checklist": [
+      {
+        "ar": "تصريح الإقامة أو الإيصال",
+        "fr": "Titre de séjour ou reçu",
+        "it": "Permesso o ricevuta",
+        "en": "Permit or receipt"
+      },
+      {
+        "ar": "الرمز الضريبي",
+        "fr": "Code fiscal",
+        "it": "Codice fiscale",
+        "en": "Tax code"
+      },
+      {
+        "ar": "جواز السفر",
+        "fr": "Passeport",
+        "it": "Passaporto",
+        "en": "Passport"
+      },
+      {
+        "ar": "العنوان أو شهادة السكن",
+        "fr": "Adresse ou attestation de résidence",
+        "it": "Indirizzo o residenza",
+        "en": "Address or residence"
+      }
+    ]
   },
   {
     "id": "residenza",
@@ -139,7 +248,12 @@
     },
     "steps": [
       {
-        "title": {"ar": "حضّر الوثائق", "fr": "Préparez les documents", "it": "Prepara i documenti", "en": "Prepare your documents"},
+        "title": {
+          "ar": "حضّر الوثائق",
+          "fr": "Préparez les documents",
+          "it": "Prepara i documenti",
+          "en": "Prepare your documents"
+        },
         "body": {
           "ar": "جواز السفر، تصريح الإقامة، الرمز الضريبي، وعقد الكراء أو موافقة صاحب السكن.",
           "fr": "Passeport, titre de séjour, code fiscal et bail ou accord du propriétaire.",
@@ -149,7 +263,12 @@
         "italianTerm": "Contratto d'affitto"
       },
       {
-        "title": {"ar": "قدِّم التصريح في البلدية", "fr": "Faites la déclaration à la mairie", "it": "Presenta la dichiarazione", "en": "Submit the declaration"},
+        "title": {
+          "ar": "قدِّم التصريح في البلدية",
+          "fr": "Faites la déclaration à la mairie",
+          "it": "Presenta la dichiarazione",
+          "en": "Submit the declaration"
+        },
         "body": {
           "ar": "قدِّم تصريح الإقامة في مكتب السجل المدني (Anagrafe) بالبلدية، حضوريًا أو عبر الإنترنت حسب البلدية.",
           "fr": "Déposez la déclaration à l'Anagrafe de la mairie, sur place ou en ligne selon la commune.",
@@ -159,7 +278,12 @@
         "italianTerm": "Dichiarazione di residenza"
       },
       {
-        "title": {"ar": "زيارة التحقق", "fr": "Visite de contrôle", "it": "Il controllo", "en": "The verification visit"},
+        "title": {
+          "ar": "زيارة التحقق",
+          "fr": "Visite de contrôle",
+          "it": "Il controllo",
+          "en": "The verification visit"
+        },
         "body": {
           "ar": "قد يزورك موظف من البلدية للتحقق من أنك تسكن فعلًا في العنوان.",
           "fr": "Un agent de la mairie peut passer vérifier que vous habitez bien à l'adresse.",
@@ -174,7 +298,33 @@
       "fr": "La résidence est nécessaire pour beaucoup de services, comme la carte de santé ou la carte d'identité.",
       "it": "La residenza serve per molti servizi, come la tessera sanitaria e la carta d'identità.",
       "en": "Registered residence is needed for many services, such as the health card and ID card."
-    }
+    },
+    "checklist": [
+      {
+        "ar": "جواز السفر",
+        "fr": "Passeport",
+        "it": "Passaporto",
+        "en": "Passport"
+      },
+      {
+        "ar": "تصريح الإقامة",
+        "fr": "Titre de séjour",
+        "it": "Permesso di soggiorno",
+        "en": "Residence permit"
+      },
+      {
+        "ar": "الرمز الضريبي",
+        "fr": "Code fiscal",
+        "it": "Codice fiscale",
+        "en": "Tax code"
+      },
+      {
+        "ar": "عقد الكراء أو موافقة صاحب السكن",
+        "fr": "Bail ou accord du propriétaire",
+        "it": "Contratto d'affitto o assenso del proprietario",
+        "en": "Rental contract or owner's consent"
+      }
+    ]
   },
   {
     "id": "codice-fiscale",
@@ -188,7 +338,12 @@
     },
     "steps": [
       {
-        "title": {"ar": "تحقّق إن كان لديك رمز", "fr": "Vérifiez si vous en avez un", "it": "Controlla se ce l'hai già", "en": "Check if you already have one"},
+        "title": {
+          "ar": "تحقّق إن كان لديك رمز",
+          "fr": "Vérifiez si vous en avez un",
+          "it": "Controlla se ce l'hai già",
+          "en": "Check if you already have one"
+        },
         "body": {
           "ar": "غالبًا يُمنح لك الرمز الضريبي مع ملف تصريح الإقامة. ابحث عنه في وثائقك.",
           "fr": "Il est souvent attribué avec le dossier du titre de séjour. Cherchez-le dans vos documents.",
@@ -198,7 +353,12 @@
         "italianTerm": null
       },
       {
-        "title": {"ar": "اذهب إلى Agenzia delle Entrate", "fr": "Allez à l'Agenzia delle Entrate", "it": "Vai all'Agenzia delle Entrate", "en": "Go to the Agenzia delle Entrate"},
+        "title": {
+          "ar": "اذهب إلى Agenzia delle Entrate",
+          "fr": "Allez à l'Agenzia delle Entrate",
+          "it": "Vai all'Agenzia delle Entrate",
+          "en": "Go to the Agenzia delle Entrate"
+        },
         "body": {
           "ar": "إن لم يكن لديك رمز، اطلبه مجانًا في مكتب Agenzia delle Entrate مع جواز السفر وتصريح الإقامة.",
           "fr": "Sinon, demandez-le gratuitement à l'Agenzia delle Entrate avec passeport et titre de séjour.",
@@ -208,7 +368,12 @@
         "italianTerm": "Agenzia delle Entrate"
       },
       {
-        "title": {"ar": "استعمله في كل مكان", "fr": "Utilisez-le partout", "it": "Usalo ovunque", "en": "Use it everywhere"},
+        "title": {
+          "ar": "استعمله في كل مكان",
+          "fr": "Utilisez-le partout",
+          "it": "Usalo ovunque",
+          "en": "Use it everywhere"
+        },
         "body": {
           "ar": "تحتاجه للعمل، والبنك، والطبيب، وعقد الكراء.",
           "fr": "Il sert pour le travail, la banque, le médecin et le bail.",
@@ -223,6 +388,461 @@
       "fr": "Le code fiscal est gratuit. Ne payez aucun intermédiaire pour l'obtenir.",
       "it": "Il codice fiscale è gratuito. Non pagare intermediari per ottenerlo.",
       "en": "The tax code is free. Don't pay any middleman for it."
+    },
+    "checklist": [
+      {
+        "ar": "جواز السفر",
+        "fr": "Passeport",
+        "it": "Passaporto",
+        "en": "Passport"
+      },
+      {
+        "ar": "تصريح الإقامة أو الإيصال",
+        "fr": "Titre de séjour ou reçu",
+        "it": "Permesso o ricevuta",
+        "en": "Permit or receipt"
+      },
+      {
+        "ar": "استمارة الطلب (AA4/8)",
+        "fr": "Formulaire AA4/8",
+        "it": "Modulo AA4/8",
+        "en": "Form AA4/8"
+      }
+    ]
+  },
+  {
+    "id": "ricongiungimento",
+    "icon": "family",
+    "italianName": "Ricongiungimento familiare",
+    "title": {
+      "ar": "التجمع العائلي",
+      "fr": "Regroupement familial",
+      "it": "Ricongiungimento familiare",
+      "en": "Family reunification"
+    },
+    "steps": [
+      {
+        "title": {
+          "ar": "تحقّق من الشروط",
+          "fr": "Vérifiez les conditions",
+          "it": "Verifica i requisiti",
+          "en": "Check the requirements"
+        },
+        "body": {
+          "ar": "تحتاج إلى تصريح إقامة ساري، ودخل كافٍ، وسكن مناسب لعدد أفراد الأسرة.",
+          "fr": "Il faut un titre de séjour valide, un revenu suffisant et un logement adapté à la famille.",
+          "it": "Servono un permesso valido, un reddito sufficiente e un alloggio adatto alla famiglia.",
+          "en": "You need a valid permit, enough income and housing suitable for the family."
+        },
+        "italianTerm": "Requisiti"
+      },
+      {
+        "title": {
+          "ar": "شهادة صلاحية السكن",
+          "fr": "Certificat de logement",
+          "it": "Idoneità alloggiativa",
+          "en": "Housing certificate"
+        },
+        "body": {
+          "ar": "اطلب من البلدية شهادة تثبت أن سكنك مناسب.",
+          "fr": "Demandez à la mairie le certificat attestant que le logement est adapté.",
+          "it": "Chiedi al Comune il certificato di idoneità dell'alloggio.",
+          "en": "Ask the Comune for the certificate that your home is suitable."
+        },
+        "italianTerm": "Certificato di idoneità alloggiativa"
+      },
+      {
+        "title": {
+          "ar": "قدِّم الطلب عبر الإنترنت",
+          "fr": "Faites la demande en ligne",
+          "it": "Fai la domanda online",
+          "en": "Apply online"
+        },
+        "body": {
+          "ar": "يُقدَّم طلب الإذن (Nulla osta) عبر بوابة وزارة الداخلية، ثم يستدعيك مكتب Sportello Unico.",
+          "fr": "La demande de nulla osta se fait sur le portail du ministère de l'Intérieur ; le Sportello Unico vous convoque ensuite.",
+          "it": "La domanda di nulla osta si invia sul portale del Ministero dell'Interno; poi lo Sportello Unico ti convoca.",
+          "en": "The nulla osta request is sent on the Interior Ministry portal; then the Sportello Unico calls you in."
+        },
+        "italianTerm": "Nulla osta"
+      },
+      {
+        "title": {
+          "ar": "التأشيرة في القنصلية",
+          "fr": "Le visa au consulat",
+          "it": "Il visto al consolato",
+          "en": "Visa at the consulate"
+        },
+        "body": {
+          "ar": "بعد الموافقة، يطلب أفراد أسرتك التأشيرة من القنصلية الإيطالية في بلدهم.",
+          "fr": "Après l'accord, votre famille demande le visa au consulat italien de son pays.",
+          "it": "Dopo il nulla osta, i familiari chiedono il visto al consolato italiano nel loro Paese.",
+          "en": "Once approved, your family applies for the visa at the Italian consulate in their country."
+        },
+        "italianTerm": "Visto"
+      },
+      {
+        "title": {
+          "ar": "تصريح الإقامة بعد الوصول",
+          "fr": "Titre de séjour après l'arrivée",
+          "it": "Permesso dopo l'arrivo",
+          "en": "Permit after arrival"
+        },
+        "body": {
+          "ar": "بعد وصولهم إلى إيطاليا، يجب طلب تصريح الإقامة خلال 8 أيام.",
+          "fr": "Après l'arrivée en Italie, la demande de titre de séjour doit être faite dans les 8 jours.",
+          "it": "Dopo l'arrivo in Italia, il permesso va chiesto entro 8 giorni.",
+          "en": "After arriving in Italy, the permit must be requested within 8 days."
+        },
+        "italianTerm": "Entro 8 giorni"
+      }
+    ],
+    "checklist": [
+      {
+        "ar": "تصريح إقامتك",
+        "fr": "Votre titre de séjour",
+        "it": "Il tuo permesso",
+        "en": "Your permit"
+      },
+      {
+        "ar": "إثبات الدخل (عقد العمل، الأجرة، التصريح الضريبي)",
+        "fr": "Justificatifs de revenus",
+        "it": "Prova del reddito (contratto, buste paga, dichiarazione)",
+        "en": "Proof of income (contract, payslips, tax return)"
+      },
+      {
+        "ar": "شهادة صلاحية السكن",
+        "fr": "Certificat de logement",
+        "it": "Idoneità alloggiativa",
+        "en": "Housing certificate"
+      },
+      {
+        "ar": "وثائق الحالة المدنية (عقد الزواج، شهادات الميلاد)",
+        "fr": "Actes d'état civil (mariage, naissance)",
+        "it": "Atti di stato civile (matrimonio, nascita)",
+        "en": "Civil status documents (marriage, birth)"
+      },
+      {
+        "ar": "جوازات سفر أفراد الأسرة",
+        "fr": "Passeports de la famille",
+        "it": "Passaporti dei familiari",
+        "en": "Family members' passports"
+      }
+    ],
+    "tip": {
+      "ar": "وثائق الحالة المدنية الأجنبية تحتاج غالبًا إلى ترجمة وتصديق. استعن بمكتب Patronato مجانًا.",
+      "fr": "Les actes étrangers doivent souvent être traduits et légalisés. Un Patronato peut vous aider gratuitement.",
+      "it": "Gli atti stranieri vanno spesso tradotti e legalizzati. Un Patronato può aiutarti gratis.",
+      "en": "Foreign documents often need translation and legalisation. A Patronato can help for free."
+    }
+  },
+  {
+    "id": "cittadinanza",
+    "icon": "flag",
+    "italianName": "Cittadinanza italiana",
+    "title": {
+      "ar": "الجنسية الإيطالية",
+      "fr": "La nationalité italienne",
+      "it": "La cittadinanza italiana",
+      "en": "Italian citizenship"
+    },
+    "steps": [
+      {
+        "title": {
+          "ar": "سنوات الإقامة",
+          "fr": "Années de résidence",
+          "it": "Anni di residenza",
+          "en": "Years of residence"
+        },
+        "body": {
+          "ar": "لغير الأوروبيين: تحتاج عادةً إلى 10 سنوات من الإقامة القانونية المسجّلة في إيطاليا.",
+          "fr": "Pour les non-européens : en général 10 ans de résidence légale enregistrée en Italie.",
+          "it": "Per i cittadini non UE: di solito 10 anni di residenza legale in Italia.",
+          "en": "For non-EU citizens: usually 10 years of legal registered residence in Italy."
+        },
+        "italianTerm": "Residenza legale"
+      },
+      {
+        "title": {
+          "ar": "شهادة اللغة B1",
+          "fr": "Certificat de langue B1",
+          "it": "Certificato di lingua B1",
+          "en": "B1 language certificate"
+        },
+        "body": {
+          "ar": "يجب إثبات مستوى B1 في الإيطالية بشهادة معترف بها.",
+          "fr": "Il faut prouver le niveau B1 en italien avec un certificat reconnu.",
+          "it": "Serve una certificazione riconosciuta di italiano livello B1.",
+          "en": "You must prove B1 Italian with a recognised certificate."
+        },
+        "italianTerm": "Livello B1"
+      },
+      {
+        "title": {
+          "ar": "الدخل والسجل العدلي",
+          "fr": "Revenus et casier judiciaire",
+          "it": "Reddito e casellario",
+          "en": "Income and criminal record"
+        },
+        "body": {
+          "ar": "تحتاج إلى دخل كافٍ في السنوات الأخيرة، وسجل عدلي من بلدك الأصلي.",
+          "fr": "Il faut des revenus suffisants ces dernières années et un casier judiciaire de votre pays.",
+          "it": "Servono redditi sufficienti negli ultimi anni e il certificato penale del Paese d'origine.",
+          "en": "You need enough income in recent years and a criminal record certificate from your home country."
+        },
+        "italianTerm": "Certificato penale"
+      },
+      {
+        "title": {
+          "ar": "الطلب عبر الإنترنت",
+          "fr": "Demande en ligne",
+          "it": "Domanda online",
+          "en": "Apply online"
+        },
+        "body": {
+          "ar": "يُقدَّم الطلب عبر بوابة وزارة الداخلية بالهوية الرقمية SPID، مع دفع رسوم.",
+          "fr": "La demande se fait sur le portail du ministère de l'Intérieur avec l'identité numérique SPID, avec des frais.",
+          "it": "La domanda si invia sul portale del Ministero dell'Interno con SPID e si paga un contributo.",
+          "en": "Apply on the Interior Ministry portal with SPID digital identity, and pay a fee."
+        },
+        "italianTerm": "SPID"
+      }
+    ],
+    "checklist": [
+      {
+        "ar": "شهادة الميلاد مترجمة ومصدّقة",
+        "fr": "Acte de naissance traduit et légalisé",
+        "it": "Atto di nascita tradotto e legalizzato",
+        "en": "Birth certificate, translated and legalised"
+      },
+      {
+        "ar": "السجل العدلي مترجمًا ومصدّقًا",
+        "fr": "Casier judiciaire traduit et légalisé",
+        "it": "Certificato penale tradotto e legalizzato",
+        "en": "Criminal record, translated and legalised"
+      },
+      {
+        "ar": "شهادة اللغة B1",
+        "fr": "Certificat de langue B1",
+        "it": "Certificato B1",
+        "en": "B1 certificate"
+      },
+      {
+        "ar": "جواز السفر وتصريح الإقامة",
+        "fr": "Passeport et titre de séjour",
+        "it": "Passaporto e permesso",
+        "en": "Passport and permit"
+      },
+      {
+        "ar": "هوية رقمية SPID",
+        "fr": "Identité numérique SPID",
+        "it": "SPID",
+        "en": "SPID digital identity"
+      },
+      {
+        "ar": "وصل دفع الرسوم",
+        "fr": "Reçu du paiement des frais",
+        "it": "Ricevuta del contributo",
+        "en": "Fee payment receipt"
+      }
+    ],
+    "tip": {
+      "ar": "الشروط والرسوم تتغيّر أحيانًا. تحقّق دائمًا من موقع وزارة الداخلية أو من مكتب Patronato.",
+      "fr": "Les conditions et frais changent parfois. Vérifiez sur le site du ministère ou auprès d'un Patronato.",
+      "it": "Requisiti e costi possono cambiare. Verifica sempre sul sito del Ministero o con un Patronato.",
+      "en": "Rules and fees can change. Always check the Interior Ministry website or a Patronato."
+    }
+  },
+  {
+    "id": "patente",
+    "icon": "car",
+    "italianName": "Conversione della patente",
+    "title": {
+      "ar": "رخصة السياقة",
+      "fr": "Le permis de conduire",
+      "it": "La patente di guida",
+      "en": "Driving licence"
+    },
+    "steps": [
+      {
+        "title": {
+          "ar": "سنة واحدة فقط",
+          "fr": "Un an seulement",
+          "it": "Solo un anno",
+          "en": "Only one year"
+        },
+        "body": {
+          "ar": "بعد تسجيل إقامتك، يمكنك السياقة برخصتك الأجنبية لمدة سنة واحدة فقط.",
+          "fr": "Après l'inscription de résidence, votre permis étranger n'est valable qu'un an.",
+          "it": "Dopo la residenza, puoi guidare con la patente straniera solo per un anno.",
+          "en": "After registering residence, you can drive with a foreign licence for one year only."
+        },
+        "italianTerm": "Residenza da un anno"
+      },
+      {
+        "title": {
+          "ar": "هل يوجد اتفاق مع بلدك؟",
+          "fr": "Y a-t-il un accord avec votre pays ?",
+          "it": "C'è un accordo con il tuo Paese?",
+          "en": "Is there an agreement with your country?"
+        },
+        "body": {
+          "ar": "إذا كان بين إيطاليا وبلدك اتفاق، يمكنك تحويل الرخصة دون امتحان. وإلا يجب اجتياز الامتحان الإيطالي.",
+          "fr": "S'il existe un accord entre l'Italie et votre pays, vous pouvez convertir sans examen. Sinon, il faut passer l'examen italien.",
+          "it": "Se c'è un accordo tra l'Italia e il tuo Paese, puoi convertire senza esame. Altrimenti devi fare l'esame.",
+          "en": "If Italy has an agreement with your country, you can convert without an exam. Otherwise you take the Italian test."
+        },
+        "italianTerm": "Accordo di reciprocità"
+      },
+      {
+        "title": {
+          "ar": "الطلب في Motorizzazione",
+          "fr": "Demande à la Motorizzazione",
+          "it": "Domanda alla Motorizzazione",
+          "en": "Apply at the Motorizzazione"
+        },
+        "body": {
+          "ar": "قدِّم الطلب في مكتب Motorizzazione Civile مع الرخصة الأصلية وشهادة طبية.",
+          "fr": "Déposez la demande à la Motorizzazione Civile avec le permis original et un certificat médical.",
+          "it": "Presenta la domanda alla Motorizzazione Civile con la patente originale e il certificato medico.",
+          "en": "Apply at the Motorizzazione Civile with your original licence and a medical certificate."
+        },
+        "italianTerm": "Motorizzazione Civile"
+      }
+    ],
+    "checklist": [
+      {
+        "ar": "الرخصة الأصلية",
+        "fr": "Permis original",
+        "it": "Patente originale",
+        "en": "Original licence"
+      },
+      {
+        "ar": "ترجمة رسمية للرخصة",
+        "fr": "Traduction officielle du permis",
+        "it": "Traduzione ufficiale della patente",
+        "en": "Official translation of the licence"
+      },
+      {
+        "ar": "شهادة طبية",
+        "fr": "Certificat médical",
+        "it": "Certificato medico",
+        "en": "Medical certificate"
+      },
+      {
+        "ar": "تصريح الإقامة والإقامة المسجّلة",
+        "fr": "Titre de séjour et résidence",
+        "it": "Permesso e residenza",
+        "en": "Permit and registered residence"
+      },
+      {
+        "ar": "صور شخصية",
+        "fr": "Photos d'identité",
+        "it": "Fototessere",
+        "en": "Passport photos"
+      }
+    ],
+    "tip": {
+      "ar": "لا تنتظر حتى آخر السنة، فالإجراءات قد تأخذ وقتًا.",
+      "fr": "N'attendez pas la fin de l'année : la procédure peut prendre du temps.",
+      "it": "Non aspettare la fine dell'anno: la pratica può richiedere tempo.",
+      "en": "Don't wait until the year is almost over: it can take time."
+    }
+  },
+  {
+    "id": "isee",
+    "icon": "isee",
+    "italianName": "ISEE",
+    "title": {
+      "ar": "شهادة ISEE",
+      "fr": "L'attestation ISEE",
+      "it": "L'ISEE",
+      "en": "The ISEE certificate"
+    },
+    "steps": [
+      {
+        "title": {
+          "ar": "ما هو ISEE؟",
+          "fr": "Qu'est-ce que l'ISEE ?",
+          "it": "Cos'è l'ISEE?",
+          "en": "What is ISEE?"
+        },
+        "body": {
+          "ar": "مؤشر للوضع المادي للأسرة، ويُطلب للحصول على المساعدات، وتخفيضات المدرسة والحضانة وغيرها.",
+          "fr": "Un indicateur de la situation économique du foyer, demandé pour les aides et les réductions (école, crèche…).",
+          "it": "Un indicatore della situazione economica della famiglia, serve per bonus e agevolazioni (scuola, asilo…).",
+          "en": "An indicator of your household's finances, needed for benefits and discounts (school, nursery…)."
+        },
+        "italianTerm": null
+      },
+      {
+        "title": {
+          "ar": "املأ التصريح DSU",
+          "fr": "Remplissez la DSU",
+          "it": "Compila la DSU",
+          "en": "Fill in the DSU"
+        },
+        "body": {
+          "ar": "يمكنك ملؤه مجانًا في مكتب CAF، أو بنفسك على موقع INPS باستعمال SPID.",
+          "fr": "Gratuitement dans un CAF, ou vous-même sur le site de l'INPS avec SPID.",
+          "it": "Gratis al CAF, oppure da solo sul sito INPS con SPID.",
+          "en": "For free at a CAF office, or yourself on the INPS website with SPID."
+        },
+        "italianTerm": "DSU"
+      },
+      {
+        "title": {
+          "ar": "استلم الشهادة",
+          "fr": "Recevez l'attestation",
+          "it": "Ricevi l'attestazione",
+          "en": "Get the certificate"
+        },
+        "body": {
+          "ar": "تصدر الشهادة بعد أيام قليلة، وتكون صالحة حتى 31 ديسمبر.",
+          "fr": "L'attestation arrive en quelques jours et reste valable jusqu'au 31 décembre.",
+          "it": "L'attestazione arriva in pochi giorni ed è valida fino al 31 dicembre.",
+          "en": "The certificate arrives in a few days and is valid until 31 December."
+        },
+        "italianTerm": "Attestazione ISEE"
+      }
+    ],
+    "checklist": [
+      {
+        "ar": "بطاقات الهوية والرمز الضريبي لكل أفراد الأسرة",
+        "fr": "Pièces d'identité et codes fiscaux du foyer",
+        "it": "Documenti e codici fiscali di tutta la famiglia",
+        "en": "IDs and tax codes for the whole household"
+      },
+      {
+        "ar": "عقد الكراء",
+        "fr": "Bail",
+        "it": "Contratto d'affitto",
+        "en": "Rental contract"
+      },
+      {
+        "ar": "أرصدة الحسابات البنكية في نهاية السنة",
+        "fr": "Soldes bancaires de fin d'année",
+        "it": "Saldi e giacenze dei conti",
+        "en": "Year-end bank balances"
+      },
+      {
+        "ar": "التصريح الضريبي أو شهادة الأجر",
+        "fr": "Déclaration de revenus ou CU",
+        "it": "Dichiarazione dei redditi o CU",
+        "en": "Tax return or CU"
+      },
+      {
+        "ar": "وثيقة السيارة إن وجدت",
+        "fr": "Carte grise si vous avez une voiture",
+        "it": "Libretto auto, se c'è",
+        "en": "Car registration, if any"
+      }
+    ],
+    "tip": {
+      "ar": "جدّد ISEE في بداية كل سنة حتى لا تتوقف المساعدات.",
+      "fr": "Renouvelez l'ISEE en début d'année pour ne pas perdre les aides.",
+      "it": "Rinnova l'ISEE a inizio anno per non perdere i bonus.",
+      "en": "Renew your ISEE at the start of each year so benefits don't stop."
     }
   }
 ]

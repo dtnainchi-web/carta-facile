@@ -137,8 +137,10 @@ Future<void> showDateEditor(
   String? initialTitle,
   DateTime? initialDate,
   String? initialPlace,
+  String kind = '',
 }) {
   final permit = existing?.isPermit ?? isPermit;
+  final docKind = existing?.kind ?? kind;
   final titleCtrl = TextEditingController(
       text: existing?.title ?? initialTitle ?? (permit ? tr('permit_expiry') : ''));
   final placeCtrl = TextEditingController(text: existing?.place ?? initialPlace ?? '');
@@ -198,6 +200,7 @@ Future<void> showDateEditor(
                         date: picked!,
                         place: placeCtrl.text.trim(),
                         isPermit: permit,
+                        kind: docKind,
                       ));
                       if (sheetContext.mounted) Navigator.pop(sheetContext);
                     },

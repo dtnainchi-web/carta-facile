@@ -15,6 +15,14 @@ import '../core/theme.dart';
       return (icon: Icons.home_work_outlined, color: AppColors.accentText, soft: AppColors.accentSoft);
     case 'tax':
       return (icon: Icons.receipt_long_outlined, color: const Color(0xFF5B47A0), soft: const Color(0xFFEEEAF7));
+    case 'family':
+      return (icon: Icons.family_restroom, color: const Color(0xFFB0413E), soft: const Color(0xFFFBE9E8));
+    case 'flag':
+      return (icon: Icons.flag_outlined, color: AppColors.success, soft: AppColors.successSoft);
+    case 'car':
+      return (icon: Icons.directions_car_outlined, color: AppColors.primary, soft: AppColors.primarySoft);
+    case 'isee':
+      return (icon: Icons.euro_outlined, color: AppColors.accentText, soft: AppColors.accentSoft);
     default:
       return (icon: Icons.description_outlined, color: AppColors.primary, soft: AppColors.primarySoft);
   }
