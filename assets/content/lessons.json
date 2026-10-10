@@ -1,0 +1,153 @@
+[
+  {
+    "id": "l01", "minutes": 5, "italianTitle": "Saluti e presentazioni",
+    "title": {"ar": "التحية والتعارف", "fr": "Salutations et présentations", "it": "Saluti e presentazioni", "en": "Greetings and introductions"},
+    "phrases": [
+      {"it": "Buongiorno", "meaning": {"ar": "صباح الخير / مرحبًا (في النهار)", "fr": "Bonjour", "en": "Good morning / Hello"}},
+      {"it": "Buonasera", "meaning": {"ar": "مساء الخير", "fr": "Bonsoir", "en": "Good evening"}},
+      {"it": "Mi chiamo Ahmed", "meaning": {"ar": "اسمي أحمد", "fr": "Je m'appelle Ahmed", "en": "My name is Ahmed"}},
+      {"it": "Piacere di conoscerla", "meaning": {"ar": "تشرّفت بمعرفتك (بأدب)", "fr": "Enchanté de vous connaître", "en": "Nice to meet you (formal)"}},
+      {"it": "Non parlo bene l'italiano", "meaning": {"ar": "لا أتكلم الإيطالية جيدًا", "fr": "Je ne parle pas bien italien", "en": "I don't speak Italian well"}},
+      {"it": "Può parlare più lentamente, per favore?", "meaning": {"ar": "هل يمكنك التكلم ببطء من فضلك؟", "fr": "Pouvez-vous parler plus lentement, s'il vous plaît ?", "en": "Can you speak more slowly, please?"}}
+    ],
+    "quiz": {
+      "question": {"ar": "كيف تقول «تشرّفت بمعرفتك» بالإيطالية؟", "fr": "Comment dit-on « Enchanté » en italien ?", "it": "Come si dice «Nice to meet you»?", "en": "How do you say \"Nice to meet you\" in Italian?"},
+      "options": ["Piacere", "Grazie", "Arrivederci"], "answer": 0
+    }
+  },
+  {
+    "id": "l02", "minutes": 5, "italianTitle": "Numeri, date e orari",
+    "title": {"ar": "الأرقام والتواريخ والساعة", "fr": "Nombres, dates et heures", "it": "Numeri, date e orari", "en": "Numbers, dates and time"},
+    "phrases": [
+      {"it": "Quanto costa?", "meaning": {"ar": "كم الثمن؟", "fr": "Combien ça coûte ?", "en": "How much does it cost?"}},
+      {"it": "Che ore sono?", "meaning": {"ar": "كم الساعة؟", "fr": "Quelle heure est-il ?", "en": "What time is it?"}},
+      {"it": "Sono le dieci e mezza", "meaning": {"ar": "الساعة العاشرة والنصف", "fr": "Il est dix heures et demie", "en": "It's half past ten"}},
+      {"it": "Oggi è lunedì", "meaning": {"ar": "اليوم هو الإثنين", "fr": "Aujourd'hui, c'est lundi", "en": "Today is Monday"}},
+      {"it": "Il mio appuntamento è il 15 marzo", "meaning": {"ar": "موعدي يوم 15 مارس", "fr": "Mon rendez-vous est le 15 mars", "en": "My appointment is on 15 March"}}
+    ],
+    "quiz": {
+      "question": {"ar": "كيف تسأل «كم الساعة؟» بالإيطالية؟", "fr": "Comment demander « Quelle heure est-il ? » en italien ?", "it": "Come si dice «What time is it?»", "en": "How do you ask \"What time is it?\" in Italian?"},
+      "options": ["Quanto costa?", "Che ore sono?", "Dove si trova?"], "answer": 1
+    }
+  },
+  {
+    "id": "l03", "minutes": 5, "italianTitle": "All'ufficio postale",
+    "title": {"ar": "في مكتب البريد", "fr": "À la poste", "it": "All'ufficio postale", "en": "At the post office"},
+    "phrases": [
+      {"it": "Vorrei spedire questo kit", "meaning": {"ar": "أريد إرسال هذا الملف", "fr": "Je voudrais envoyer ce kit", "en": "I'd like to send this kit"}},
+      {"it": "Dov'è lo Sportello Amico?", "meaning": {"ar": "أين يوجد شباك Sportello Amico؟", "fr": "Où est le guichet Sportello Amico ?", "en": "Where is the Sportello Amico desk?"}},
+      {"it": "Quale numero devo prendere?", "meaning": {"ar": "أي رقم انتظار يجب أن آخذ؟", "fr": "Quel ticket dois-je prendre ?", "en": "Which queue number should I take?"}},
+      {"it": "Devo pagare un bollettino", "meaning": {"ar": "يجب أن أدفع وصل أداء", "fr": "Je dois payer un bulletin de paiement", "en": "I need to pay a payment slip"}},
+      {"it": "Posso avere la ricevuta?", "meaning": {"ar": "هل يمكنني الحصول على الإيصال؟", "fr": "Puis-je avoir le reçu ?", "en": "Can I have the receipt?"}}
+    ],
+    "quiz": {
+      "question": {"ar": "ما معنى «la ricevuta»؟", "fr": "Que veut dire « la ricevuta » ?", "it": "Qual è la parola per «receipt»?", "en": "Which word means \"receipt\"?"},
+      "options": ["la ricevuta", "il bollettino", "la busta"], "answer": 0
+    }
+  },
+  {
+    "id": "l04", "minutes": 5, "italianTitle": "In Questura",
+    "title": {"ar": "في الـ Questura", "fr": "À la Questura", "it": "In Questura", "en": "At the Questura"},
+    "phrases": [
+      {"it": "Ho un appuntamento per le impronte", "meaning": {"ar": "لدي موعد لأخذ البصمات", "fr": "J'ai rendez-vous pour les empreintes", "en": "I have an appointment for fingerprints"}},
+      {"it": "Sono qui per il rinnovo del permesso", "meaning": {"ar": "جئت من أجل تجديد تصريح الإقامة", "fr": "Je viens pour le renouvellement du titre de séjour", "en": "I'm here to renew my permit"}},
+      {"it": "Ecco il mio passaporto", "meaning": {"ar": "تفضّل جواز سفري", "fr": "Voici mon passeport", "en": "Here is my passport"}},
+      {"it": "Quando sarà pronto il permesso?", "meaning": {"ar": "متى سيكون التصريح جاهزًا؟", "fr": "Quand le titre de séjour sera-t-il prêt ?", "en": "When will the permit be ready?"}},
+      {"it": "Ho ricevuto un SMS dalla Questura", "meaning": {"ar": "وصلتني رسالة نصية من الـ Questura", "fr": "J'ai reçu un SMS de la Questura", "en": "I got a text from the Questura"}}
+    ],
+    "quiz": {
+      "question": {"ar": "ما الكلمة الإيطالية التي تعني «البصمات»؟", "fr": "Quel mot italien veut dire « empreintes » ?", "it": "Qual è la parola per «fingerprints»?", "en": "Which Italian word means \"fingerprints\"?"},
+      "options": ["le impronte", "il rinnovo", "la ricevuta"], "answer": 0
+    }
+  },
+  {
+    "id": "l05", "minutes": 5, "italianTitle": "Dal medico e in farmacia",
+    "title": {"ar": "عند الطبيب والصيدلية", "fr": "Chez le médecin et à la pharmacie", "it": "Dal medico e in farmacia", "en": "At the doctor and pharmacy"},
+    "phrases": [
+      {"it": "Ho bisogno di un medico", "meaning": {"ar": "أحتاج إلى طبيب", "fr": "J'ai besoin d'un médecin", "en": "I need a doctor"}},
+      {"it": "Mi fa male la testa", "meaning": {"ar": "رأسي يؤلمني", "fr": "J'ai mal à la tête", "en": "My head hurts"}},
+      {"it": "Ho la febbre", "meaning": {"ar": "عندي حمّى", "fr": "J'ai de la fièvre", "en": "I have a fever"}},
+      {"it": "Serve la ricetta?", "meaning": {"ar": "هل أحتاج إلى وصفة طبية؟", "fr": "Faut-il une ordonnance ?", "en": "Do I need a prescription?"}},
+      {"it": "Vorrei prenotare una visita", "meaning": {"ar": "أريد حجز موعد عند الطبيب", "fr": "Je voudrais prendre rendez-vous", "en": "I'd like to book an appointment"}}
+    ],
+    "quiz": {
+      "question": {"ar": "كيف تقول «عندي حمّى» بالإيطالية؟", "fr": "Comment dit-on « J'ai de la fièvre » ?", "it": "Come si dice «I have a fever»?", "en": "How do you say \"I have a fever\"?"},
+      "options": ["Ho la febbre", "Ho fame", "Ho freddo"], "answer": 0
+    }
+  },
+  {
+    "id": "l06", "minutes": 5, "italianTitle": "Al lavoro",
+    "title": {"ar": "في العمل", "fr": "Au travail", "it": "Al lavoro", "en": "At work"},
+    "phrases": [
+      {"it": "Cerco lavoro", "meaning": {"ar": "أبحث عن عمل", "fr": "Je cherche du travail", "en": "I'm looking for work"}},
+      {"it": "Ho esperienza come muratore", "meaning": {"ar": "لدي خبرة كبنّاء", "fr": "J'ai de l'expérience comme maçon", "en": "I have experience as a builder"}},
+      {"it": "A che ora inizio?", "meaning": {"ar": "في أي ساعة أبدأ؟", "fr": "À quelle heure je commence ?", "en": "What time do I start?"}},
+      {"it": "Quando ricevo lo stipendio?", "meaning": {"ar": "متى أتقاضى الراتب؟", "fr": "Quand est-ce que je reçois le salaire ?", "en": "When do I get paid?"}},
+      {"it": "Posso avere il contratto scritto?", "meaning": {"ar": "هل يمكنني الحصول على عقد مكتوب؟", "fr": "Puis-je avoir un contrat écrit ?", "en": "Can I have a written contract?"}}
+    ],
+    "quiz": {
+      "question": {"ar": "ما الكلمة الإيطالية التي تعني «الراتب»؟", "fr": "Quel mot italien veut dire « salaire » ?", "it": "Qual è la parola per «salary»?", "en": "Which Italian word means \"salary\"?"},
+      "options": ["il contratto", "lo stipendio", "il turno"], "answer": 1
+    }
+  },
+  {
+    "id": "l07", "minutes": 5, "italianTitle": "Cercare casa",
+    "title": {"ar": "كراء السكن", "fr": "Louer un logement", "it": "Cercare casa", "en": "Renting a home"},
+    "phrases": [
+      {"it": "Cerco una casa in affitto", "meaning": {"ar": "أبحث عن سكن للكراء", "fr": "Je cherche un logement à louer", "en": "I'm looking for a place to rent"}},
+      {"it": "Quanto è l'affitto al mese?", "meaning": {"ar": "كم ثمن الكراء في الشهر؟", "fr": "Combien est le loyer par mois ?", "en": "How much is the rent per month?"}},
+      {"it": "Le spese sono incluse?", "meaning": {"ar": "هل المصاريف (الماء والكهرباء…) مشمولة؟", "fr": "Les charges sont-elles comprises ?", "en": "Are the bills included?"}},
+      {"it": "Quanto è la caparra?", "meaning": {"ar": "كم مبلغ الضمان؟", "fr": "Combien est la caution ?", "en": "How much is the deposit?"}},
+      {"it": "Posso fare la residenza qui?", "meaning": {"ar": "هل يمكنني تسجيل إقامتي في هذا العنوان؟", "fr": "Puis-je déclarer ma résidence ici ?", "en": "Can I register my residence here?"}}
+    ],
+    "quiz": {
+      "question": {"ar": "كيف تسأل «هل المصاريف مشمولة؟»", "fr": "Comment demander « Les charges sont comprises ? »", "it": "Come si dice «Are the bills included?»", "en": "How do you ask \"Are the bills included?\""},
+      "options": ["Le spese sono incluse?", "Quanto costa?", "Dov'è la casa?"], "answer": 0
+    }
+  },
+  {
+    "id": "l08", "minutes": 5, "italianTitle": "In Comune",
+    "title": {"ar": "في البلدية", "fr": "À la mairie", "it": "In Comune", "en": "At the town hall"},
+    "phrases": [
+      {"it": "Vorrei fare la residenza", "meaning": {"ar": "أريد تسجيل إقامتي", "fr": "Je voudrais déclarer ma résidence", "en": "I'd like to register my residence"}},
+      {"it": "Mi serve un certificato", "meaning": {"ar": "أحتاج إلى شهادة", "fr": "J'ai besoin d'un certificat", "en": "I need a certificate"}},
+      {"it": "Dov'è l'ufficio anagrafe?", "meaning": {"ar": "أين مكتب السجل المدني؟", "fr": "Où est le bureau de l'état civil ?", "en": "Where is the registry office?"}},
+      {"it": "Devo prendere un appuntamento?", "meaning": {"ar": "هل يجب أن آخذ موعدًا؟", "fr": "Dois-je prendre rendez-vous ?", "en": "Do I need an appointment?"}},
+      {"it": "Che documenti servono?", "meaning": {"ar": "ما الوثائق المطلوبة؟", "fr": "Quels documents faut-il ?", "en": "Which documents are needed?"}}
+    ],
+    "quiz": {
+      "question": {"ar": "كيف تسأل «ما الوثائق المطلوبة؟»", "fr": "Comment demander « Quels documents faut-il ? »", "it": "Come si dice «Which documents are needed?»", "en": "How do you ask \"Which documents are needed?\""},
+      "options": ["Che documenti servono?", "Che ore sono?", "Dove si paga?"], "answer": 0
+    }
+  },
+  {
+    "id": "l09", "minutes": 5, "italianTitle": "In banca",
+    "title": {"ar": "في البنك", "fr": "À la banque", "it": "In banca", "en": "At the bank"},
+    "phrases": [
+      {"it": "Vorrei aprire un conto", "meaning": {"ar": "أريد فتح حساب", "fr": "Je voudrais ouvrir un compte", "en": "I'd like to open an account"}},
+      {"it": "Serve il codice fiscale?", "meaning": {"ar": "هل يلزم الرمز الضريبي؟", "fr": "Faut-il le code fiscal ?", "en": "Do you need my tax code?"}},
+      {"it": "Ho perso la carta", "meaning": {"ar": "أضعت البطاقة", "fr": "J'ai perdu ma carte", "en": "I lost my card"}},
+      {"it": "Vorrei fare un bonifico", "meaning": {"ar": "أريد إجراء تحويل بنكي", "fr": "Je voudrais faire un virement", "en": "I'd like to make a bank transfer"}},
+      {"it": "Qual è il mio IBAN?", "meaning": {"ar": "ما هو رقم IBAN الخاص بي؟", "fr": "Quel est mon IBAN ?", "en": "What is my IBAN?"}}
+    ],
+    "quiz": {
+      "question": {"ar": "ما الكلمة الإيطالية التي تعني «تحويل بنكي»؟", "fr": "Quel mot italien veut dire « virement » ?", "it": "Qual è la parola per «bank transfer»?", "en": "Which Italian word means \"bank transfer\"?"},
+      "options": ["il conto", "il bonifico", "la carta"], "answer": 1
+    }
+  },
+  {
+    "id": "l10", "minutes": 5, "italianTitle": "Emergenze e telefonate",
+    "title": {"ar": "الطوارئ والمكالمات الهاتفية", "fr": "Urgences et appels", "it": "Emergenze e telefonate", "en": "Emergencies and phone calls"},
+    "phrases": [
+      {"it": "Aiuto!", "meaning": {"ar": "النجدة!", "fr": "Au secours !", "en": "Help!"}},
+      {"it": "Chiamate un'ambulanza!", "meaning": {"ar": "اتصلوا بسيارة إسعاف!", "fr": "Appelez une ambulance !", "en": "Call an ambulance!"}},
+      {"it": "Il numero di emergenza è il 112", "meaning": {"ar": "رقم الطوارئ هو 112", "fr": "Le numéro d'urgence est le 112", "en": "The emergency number is 112"}},
+      {"it": "Mi sono perso", "meaning": {"ar": "لقد تُهت", "fr": "Je suis perdu", "en": "I'm lost"}},
+      {"it": "Pronto, chi parla?", "meaning": {"ar": "ألو، من يتكلم؟", "fr": "Allô, qui est à l'appareil ?", "en": "Hello, who's speaking?"}}
+    ],
+    "quiz": {
+      "question": {"ar": "كيف تقول «اتصلوا بسيارة إسعاف!»؟", "fr": "Comment dit-on « Appelez une ambulance ! » ?", "it": "Come si dice «Call an ambulance!»?", "en": "How do you say \"Call an ambulance!\"?"},
+      "options": ["Chiamate un'ambulanza!", "Chiamate un taxi!", "Ho perso la carta"], "answer": 0
+    }
+  }
+]

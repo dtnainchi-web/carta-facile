@@ -1,0 +1,228 @@
+[
+  {
+    "id": "permesso-rinnovo",
+    "icon": "permit",
+    "italianName": "Rinnovo del permesso di soggiorno",
+    "title": {
+      "ar": "تجديد تصريح الإقامة",
+      "fr": "Renouveler le titre de séjour",
+      "it": "Rinnovare il permesso di soggiorno",
+      "en": "Renew your residence permit"
+    },
+    "steps": [
+      {
+        "title": {"ar": "اجمع الوثائق", "fr": "Rassemblez les documents", "it": "Prepara i documenti", "en": "Gather your documents"},
+        "body": {
+          "ar": "جواز السفر، تصريح الإقامة الحالي، صور شخصية، والوثائق المتعلقة بسبب الإقامة (عقد عمل، دراسة، أسرة…).",
+          "fr": "Passeport, titre de séjour actuel, photos d'identité et justificatifs du motif de séjour (travail, études, famille…).",
+          "it": "Passaporto, permesso attuale, foto tessera e i documenti legati al motivo del soggiorno (lavoro, studio, famiglia…).",
+          "en": "Passport, current permit, passport photos and documents for your reason of stay (work, study, family…)."
+        },
+        "italianTerm": "Fototessere"
+      },
+      {
+        "title": {"ar": "احصل على الـ Kit من مكتب البريد", "fr": "Prenez le kit à la poste", "it": "Ritira il kit alle Poste", "en": "Get the kit at the post office"},
+        "body": {
+          "ar": "الظرف متوفر مجانًا في مكاتب Poste Italiane التي تضم شباك Sportello Amico.",
+          "fr": "L'enveloppe est gratuite dans les bureaux Poste Italiane avec un guichet Sportello Amico.",
+          "it": "La busta è gratuita negli uffici di Poste Italiane con lo Sportello Amico.",
+          "en": "The envelope is free at Poste Italiane offices with a Sportello Amico desk."
+        },
+        "italianTerm": "Kit postale"
+      },
+      {
+        "title": {"ar": "املأ الاستمارات", "fr": "Remplissez les formulaires", "it": "Compila i moduli", "en": "Fill in the forms"},
+        "body": {
+          "ar": "املأ الاستمارات الموجودة في الـ Kit بخط واضح. يمكنك طلب مساعدة مجانية من مكتب Patronato.",
+          "fr": "Remplissez lisiblement les formulaires du kit. Un Patronato peut vous aider gratuitement.",
+          "it": "Compila in modo chiaro i moduli del kit. Un Patronato può aiutarti gratuitamente.",
+          "en": "Fill in the kit forms clearly. A Patronato office can help you for free."
+        },
+        "italianTerm": "Moduli"
+      },
+      {
+        "title": {"ar": "أرسل الملف وادفع الرسوم", "fr": "Envoyez le dossier et payez", "it": "Spedisci e paga", "en": "Send the file and pay"},
+        "body": {
+          "ar": "سلّم الظرف مفتوحًا في شباك البريد مع الطابع الجبائي، وادفع الرسوم. احتفظ بالإيصال جيدًا.",
+          "fr": "Déposez l'enveloppe ouverte au guichet avec le timbre fiscal et payez les frais. Gardez bien le reçu.",
+          "it": "Consegna la busta aperta allo sportello con la marca da bollo e paga. Conserva bene la ricevuta.",
+          "en": "Hand in the open envelope at the desk with the revenue stamp and pay the fees. Keep the receipt safe."
+        },
+        "italianTerm": "Marca da bollo · Ricevuta"
+      },
+      {
+        "title": {"ar": "موعد البصمات في الـ Questura", "fr": "Rendez-vous empreintes à la Questura", "it": "Impronte in Questura", "en": "Fingerprints at the Questura"},
+        "body": {
+          "ar": "ستصلك رسالة نصية أو رسالة بموعد أخذ البصمات. احضر ومعك جواز السفر والإيصال والصور.",
+          "fr": "Vous recevrez un SMS ou une lettre avec le rendez-vous. Venez avec passeport, reçu et photos.",
+          "it": "Riceverai un SMS o una lettera con l'appuntamento. Porta passaporto, ricevuta e foto.",
+          "en": "You'll get a text or letter with the appointment. Bring your passport, receipt and photos."
+        },
+        "italianTerm": "Fotosegnalamento"
+      }
+    ],
+    "tip": {
+      "ar": "قدِّم الطلب قبل انتهاء التصريح. تحقّق من الآجال الدقيقة لدى الـ Questura أو مكتب Patronato.",
+      "fr": "Faites la demande avant l'expiration. Vérifiez les délais exacts auprès de la Questura ou d'un Patronato.",
+      "it": "Fai la domanda prima della scadenza. Verifica i tempi esatti con la Questura o un Patronato.",
+      "en": "Apply before your permit expires. Check the exact deadlines with the Questura or a Patronato."
+    }
+  },
+  {
+    "id": "tessera-sanitaria",
+    "icon": "health",
+    "italianName": "Iscrizione al SSN · Tessera sanitaria",
+    "title": {
+      "ar": "البطاقة الصحية والتسجيل في الصحة",
+      "fr": "Carte de santé et inscription au SSN",
+      "it": "Tessera sanitaria e iscrizione al SSN",
+      "en": "Health card and SSN registration"
+    },
+    "steps": [
+      {
+        "title": {"ar": "حضّر الوثائق", "fr": "Préparez les documents", "it": "Prepara i documenti", "en": "Prepare your documents"},
+        "body": {
+          "ar": "تصريح الإقامة أو إيصال التجديد، الرمز الضريبي، وعنوان السكن.",
+          "fr": "Titre de séjour ou reçu de renouvellement, code fiscal et adresse.",
+          "it": "Permesso di soggiorno o ricevuta, codice fiscale e indirizzo.",
+          "en": "Residence permit or renewal receipt, tax code and address."
+        },
+        "italianTerm": "Codice fiscale"
+      },
+      {
+        "title": {"ar": "اذهب إلى مكتب الـ ASL", "fr": "Allez à l'ASL", "it": "Vai all'ASL", "en": "Go to the ASL office"},
+        "body": {
+          "ar": "سجّل نفسك في مكتب التسجيل الصحي التابع للـ ASL في منطقتك.",
+          "fr": "Inscrivez-vous au bureau d'inscription sanitaire de l'ASL de votre zone.",
+          "it": "Iscriviti all'ufficio anagrafe sanitaria dell'ASL della tua zona.",
+          "en": "Register at the health registry office of your local ASL."
+        },
+        "italianTerm": "Anagrafe sanitaria"
+      },
+      {
+        "title": {"ar": "اختر طبيب الأسرة", "fr": "Choisissez votre médecin", "it": "Scegli il medico", "en": "Choose a family doctor"},
+        "body": {
+          "ar": "أثناء التسجيل تختار طبيب الأسرة من القائمة المتاحة.",
+          "fr": "Lors de l'inscription, vous choisissez un médecin traitant dans la liste.",
+          "it": "Durante l'iscrizione scegli il medico di base dalla lista.",
+          "en": "During registration you pick a family doctor from the list."
+        },
+        "italianTerm": "Medico di base"
+      },
+      {
+        "title": {"ar": "استلم البطاقة", "fr": "Recevez la carte", "it": "Ricevi la tessera", "en": "Receive the card"},
+        "body": {
+          "ar": "تصلك البطاقة الصحية عبر البريد إلى عنوانك.",
+          "fr": "La carte de santé arrive par la poste à votre adresse.",
+          "it": "La tessera sanitaria arriva per posta al tuo indirizzo.",
+          "en": "The health card is sent by post to your address."
+        },
+        "italianTerm": null
+      }
+    ],
+    "tip": {
+      "ar": "اكتب اسمك على صندوق البريد حتى تصلك البطاقة.",
+      "fr": "Mettez votre nom sur la boîte aux lettres pour recevoir la carte.",
+      "it": "Metti il tuo nome sulla cassetta postale per ricevere la tessera.",
+      "en": "Put your name on the mailbox so the card reaches you."
+    }
+  },
+  {
+    "id": "residenza",
+    "icon": "home",
+    "italianName": "Residenza anagrafica",
+    "title": {
+      "ar": "تسجيل الإقامة في البلدية",
+      "fr": "Inscription de résidence à la mairie",
+      "it": "Fare la residenza in Comune",
+      "en": "Register your residence"
+    },
+    "steps": [
+      {
+        "title": {"ar": "حضّر الوثائق", "fr": "Préparez les documents", "it": "Prepara i documenti", "en": "Prepare your documents"},
+        "body": {
+          "ar": "جواز السفر، تصريح الإقامة، الرمز الضريبي، وعقد الكراء أو موافقة صاحب السكن.",
+          "fr": "Passeport, titre de séjour, code fiscal et bail ou accord du propriétaire.",
+          "it": "Passaporto, permesso, codice fiscale e contratto d'affitto o assenso del proprietario.",
+          "en": "Passport, permit, tax code and rental contract or the owner's consent."
+        },
+        "italianTerm": "Contratto d'affitto"
+      },
+      {
+        "title": {"ar": "قدِّم التصريح في البلدية", "fr": "Faites la déclaration à la mairie", "it": "Presenta la dichiarazione", "en": "Submit the declaration"},
+        "body": {
+          "ar": "قدِّم تصريح الإقامة في مكتب السجل المدني (Anagrafe) بالبلدية، حضوريًا أو عبر الإنترنت حسب البلدية.",
+          "fr": "Déposez la déclaration à l'Anagrafe de la mairie, sur place ou en ligne selon la commune.",
+          "it": "Presenta la dichiarazione all'Ufficio Anagrafe, di persona o online a seconda del Comune.",
+          "en": "Submit it at the Anagrafe office of the Comune, in person or online depending on the town."
+        },
+        "italianTerm": "Dichiarazione di residenza"
+      },
+      {
+        "title": {"ar": "زيارة التحقق", "fr": "Visite de contrôle", "it": "Il controllo", "en": "The verification visit"},
+        "body": {
+          "ar": "قد يزورك موظف من البلدية للتحقق من أنك تسكن فعلًا في العنوان.",
+          "fr": "Un agent de la mairie peut passer vérifier que vous habitez bien à l'adresse.",
+          "it": "Un agente del Comune può passare a verificare che abiti davvero all'indirizzo.",
+          "en": "A municipal officer may visit to check that you really live at the address."
+        },
+        "italianTerm": "Accertamento"
+      }
+    ],
+    "tip": {
+      "ar": "الإقامة المسجلة مهمة لكثير من الخدمات، مثل البطاقة الصحية وبطاقة الهوية.",
+      "fr": "La résidence est nécessaire pour beaucoup de services, comme la carte de santé ou la carte d'identité.",
+      "it": "La residenza serve per molti servizi, come la tessera sanitaria e la carta d'identità.",
+      "en": "Registered residence is needed for many services, such as the health card and ID card."
+    }
+  },
+  {
+    "id": "codice-fiscale",
+    "icon": "tax",
+    "italianName": "Codice fiscale",
+    "title": {
+      "ar": "الرمز الضريبي",
+      "fr": "Le code fiscal",
+      "it": "Il codice fiscale",
+      "en": "The tax code"
+    },
+    "steps": [
+      {
+        "title": {"ar": "تحقّق إن كان لديك رمز", "fr": "Vérifiez si vous en avez un", "it": "Controlla se ce l'hai già", "en": "Check if you already have one"},
+        "body": {
+          "ar": "غالبًا يُمنح لك الرمز الضريبي مع ملف تصريح الإقامة. ابحث عنه في وثائقك.",
+          "fr": "Il est souvent attribué avec le dossier du titre de séjour. Cherchez-le dans vos documents.",
+          "it": "Spesso viene assegnato con la pratica del permesso. Cercalo nei tuoi documenti.",
+          "en": "It is often assigned with your permit application. Look for it in your papers."
+        },
+        "italianTerm": null
+      },
+      {
+        "title": {"ar": "اذهب إلى Agenzia delle Entrate", "fr": "Allez à l'Agenzia delle Entrate", "it": "Vai all'Agenzia delle Entrate", "en": "Go to the Agenzia delle Entrate"},
+        "body": {
+          "ar": "إن لم يكن لديك رمز، اطلبه مجانًا في مكتب Agenzia delle Entrate مع جواز السفر وتصريح الإقامة.",
+          "fr": "Sinon, demandez-le gratuitement à l'Agenzia delle Entrate avec passeport et titre de séjour.",
+          "it": "Se non ce l'hai, richiedilo gratis all'Agenzia delle Entrate con passaporto e permesso.",
+          "en": "If not, request it for free at the Agenzia delle Entrate with passport and permit."
+        },
+        "italianTerm": "Agenzia delle Entrate"
+      },
+      {
+        "title": {"ar": "استعمله في كل مكان", "fr": "Utilisez-le partout", "it": "Usalo ovunque", "en": "Use it everywhere"},
+        "body": {
+          "ar": "تحتاجه للعمل، والبنك، والطبيب، وعقد الكراء.",
+          "fr": "Il sert pour le travail, la banque, le médecin et le bail.",
+          "it": "Serve per il lavoro, la banca, il medico e l'affitto.",
+          "en": "You need it for work, the bank, the doctor and renting."
+        },
+        "italianTerm": null
+      }
+    ],
+    "tip": {
+      "ar": "الحصول على الرمز الضريبي مجاني. لا تدفع لأي وسيط مقابله.",
+      "fr": "Le code fiscal est gratuit. Ne payez aucun intermédiaire pour l'obtenir.",
+      "it": "Il codice fiscale è gratuito. Non pagare intermediari per ottenerlo.",
+      "en": "The tax code is free. Don't pay any middleman for it."
+    }
+  }
+]
