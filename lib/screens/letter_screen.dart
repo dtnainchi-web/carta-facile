@@ -6,6 +6,7 @@ import '../core/strings.dart';
 import '../core/theme.dart';
 import '../services/ai_service.dart';
 import '../widgets/common.dart';
+import 'settings_screens.dart';
 
 /// The user writes in their language what they want to say; the AI writes
 /// a polite Italian letter and explains what it says.
@@ -23,6 +24,7 @@ class _LetterScreenState extends State<LetterScreen> {
   String _recipient = 'to_landlord';
   LetterDraft? _draft;
   bool _loading = false;
+  bool _limitReached = false;
   String? _error;
 
   @override
@@ -33,6 +35,10 @@ class _LetterScreenState extends State<LetterScreen> {
 
   Future<void> _write() async {
     FocusScope.of(context).unfocus();
+    if (AiService.isConfigured && appState.lettersLeft <= 0) {
+      setState(() => _limitReached = true);
+      return;
+    }
     setState(() {
       _loading = true;
       _error = null;
@@ -45,6 +51,7 @@ class _LetterScreenState extends State<LetterScreen> {
         message: _message.text.trim(),
         language: appState.language,
       );
+      if (!draft.isDemo) await appState.registerLetter();
       if (mounted) setState(() => _draft = draft);
     } catch (_) {
       if (mounted) setState(() => _error = tr('error_generic'));
@@ -98,6 +105,16 @@ class _LetterScreenState extends State<LetterScreen> {
             icon: const Icon(Icons.auto_awesome),
             label: Text(tr('write_it')),
           ),
+          if (!appState.isPremium && AiService.isConfigured) ...[
+            const SizedBox(height: 8),
+            Text('${tr('letters_left')} ${appState.lettersLeft}',
+                textAlign: TextAlign.center,
+                style: text.bodySmall?.copyWith(color: AppColors.muted)),
+          ],
+          if (_limitReached) ...[
+            const SizedBox(height: 16),
+            LimitReachedBox(message: tr('letter_limit_reached')),
+          ],
           if (_loading)
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 24),

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carta Facile – Supporto</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+  :root { --blue:#1C4E80; --ink:#0E1B2C; --muted:#5A6575; --line:#E6E9EE; --ground:#F5F6F8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--ground); color:var(--ink);
+         font-family: "IBM Plex Sans Arabic", system-ui, -apple-system, "Segoe UI", sans-serif; line-height:1.7; }
+  header { background:var(--blue); color:#fff; padding:28px 16px; }
+  header .wrap, main { max-width:760px; margin:0 auto; }
+  header h1 { margin:0; font-size:24px; }
+  header p { margin:4px 0 0; color:#C9D8E8; font-size:14px; }
+  nav { display:flex; gap:8px; flex-wrap:wrap; margin-top:16px; }
+  nav button { min-height:44px; padding:0 16px; border-radius:22px; border:1px solid #6F93B8;
+               background:transparent; color:#fff; font:inherit; font-size:15px; cursor:pointer; }
+  nav button[aria-pressed="true"] { background:#fff; color:var(--blue); border-color:#fff; font-weight:600; }
+  main { padding:24px 16px 48px; }
+  section { display:none; background:#fff; border:1px solid var(--line); border-radius:16px; padding:8px 20px 20px; }
+  section.active { display:block; }
+  h2 { font-size:18px; margin:24px 0 6px; }
+  p { font-size:15px; }
+  .contact { display:inline-block; margin-top:8px; padding:12px 18px; border-radius:12px;
+             background:#F2A93B; color:var(--ink); font-weight:700; text-decoration:none; }
+  a { color:var(--blue); }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Carta Facile</h1>
+    <p>Supporto · الدعم · Support · Help</p>
+    <nav aria-label="Lingua">
+      <button data-lang="ar">العربية</button>
+      <button data-lang="fr">Français</button>
+      <button data-lang="it">Italiano</button>
+      <button data-lang="en">English</button>
+    </nav>
+  </div>
+</header>
+<main>
+
+<section lang="it" data-lang="it">
+  <h2>Contattaci</h2>
+  <p>Hai un problema o un suggerimento? Scrivici, rispondiamo in italiano, arabo, francese o inglese.</p>
+  <a class="contact" href="mailto:[EMAIL DI CONTATTO]">[EMAIL DI CONTATTO]</a>
+  <h2>Domande frequenti</h2>
+  <p><strong>I miei dati sono al sicuro?</strong> Sono salvati solo sul tuo telefono. Vedi la <a href="privacy.html#it">privacy</a>.</p>
+  <p><strong>Non ricevo i promemoria.</strong> Controlla che le notifiche di Carta Facile siano attive nelle impostazioni del telefono.</p>
+  <p><strong>Le informazioni sono ufficiali?</strong> No: sono guide generali. Verifica sempre con l'ufficio competente o con un Patronato.</p>
+</section>
+
+<section lang="ar" dir="rtl" data-lang="ar">
+  <h2>تواصل معنا</h2>
+  <p>عندك مشكل أو اقتراح؟ راسلنا، نجيب بالعربية والإيطالية والفرنسية والإنجليزية.</p>
+  <a class="contact" href="mailto:[EMAIL DI CONTATTO]">[البريد الإلكتروني]</a>
+  <h2>أسئلة شائعة</h2>
+  <p><strong>هل بياناتي آمنة؟</strong> محفوظة في هاتفك فقط. انظر <a href="privacy.html#ar">سياسة الخصوصية</a>.</p>
+  <p><strong>لا تصلني التذكيرات.</strong> تأكّد أن إشعارات Carta Facile مفعّلة في إعدادات الهاتف.</p>
+  <p><strong>هل المعلومات رسمية؟</strong> لا، هي أدلة عامة. تحقّق دائمًا من الجهة المختصة أو من مكتب Patronato.</p>
+</section>
+
+<section lang="fr" data-lang="fr">
+  <h2>Contactez-nous</h2>
+  <p>Un problème ou une idée ? Écrivez-nous en français, arabe, italien ou anglais.</p>
+  <a class="contact" href="mailto:[EMAIL DI CONTATTO]">[E-MAIL DE CONTACT]</a>
+  <h2>Questions fréquentes</h2>
+  <p><strong>Mes données sont-elles en sécurité ?</strong> Elles restent sur votre téléphone. Voir la <a href="privacy.html#fr">confidentialité</a>.</p>
+  <p><strong>Je ne reçois pas les rappels.</strong> Vérifiez que les notifications de Carta Facile sont activées dans les réglages du téléphone.</p>
+  <p><strong>Les informations sont-elles officielles ?</strong> Non, ce sont des guides généraux. Vérifiez toujours auprès de l'administration ou d'un Patronato.</p>
+</section>
+
+<section lang="en" data-lang="en">
+  <h2>Contact us</h2>
+  <p>A problem or an idea? Write to us in English, Arabic, Italian or French.</p>
+  <a class="contact" href="mailto:[EMAIL DI CONTATTO]">[CONTACT EMAIL]</a>
+  <h2>FAQ</h2>
+  <p><strong>Is my data safe?</strong> It stays on your phone. See the <a href="privacy.html#en">privacy policy</a>.</p>
+  <p><strong>I don't get reminders.</strong> Check that notifications for Carta Facile are on in your phone settings.</p>
+  <p><strong>Is the information official?</strong> No, these are general guides. Always check with the office or a Patronato.</p>
+</section>
+
+</main>
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('nav button');
+    var sections = document.querySelectorAll('section');
+    function show(lang) {
+      sections.forEach(function (s) { s.classList.toggle('active', s.dataset.lang === lang); });
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.lang === lang); });
+    }
+    buttons.forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.lang); }); });
+    var wanted = (location.hash || '').replace('#', '') || (navigator.language || 'it').slice(0, 2);
+    show(['ar', 'fr', 'it', 'en'].indexOf(wanted) >= 0 ? wanted : 'it');
+  })();
+</script>
+</body>
+</html>

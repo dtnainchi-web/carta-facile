@@ -8,6 +8,7 @@ import '../core/strings.dart';
 import '../core/theme.dart';
 import '../services/ai_service.dart';
 import '../widgets/common.dart';
+import 'settings_screens.dart';
 import 'tracker_screen.dart';
 
 class ScanScreen extends StatefulWidget {
@@ -22,13 +23,15 @@ class _ScanScreenState extends State<ScanScreen> {
   Uint8List? _image;
   LetterExplanation? _result;
   bool _loading = false;
+  bool _limitReached = false;
   String? _error;
 
   Future<void> _pick(ImageSource source) async {
-    if (appState.scansLeft <= 0) {
-      setState(() => _error = tr('scan_limit_reached'));
+    if (AiService.isConfigured && appState.scansLeft <= 0) {
+      setState(() => _limitReached = true);
       return;
     }
+    if (_limitReached) setState(() => _limitReached = false);
     final file = await _picker.pickImage(source: source, maxWidth: 1600, imageQuality: 80);
     if (file == null) return;
     final bytes = await file.readAsBytes();
@@ -100,7 +103,7 @@ class _ScanScreenState extends State<ScanScreen> {
         label: Text(tr('from_gallery')),
       ),
       const SizedBox(height: 16),
-      if (!appState.isPremium)
+      if (!appState.isPremium && AiService.isConfigured)
         Text('${tr('scans_left')} ${appState.scansLeft}',
             textAlign: TextAlign.center,
             style: text.bodySmall?.copyWith(color: AppColors.muted)),
@@ -108,6 +111,10 @@ class _ScanScreenState extends State<ScanScreen> {
       Text(tr('privacy_note'),
           textAlign: TextAlign.center,
           style: text.bodySmall?.copyWith(color: AppColors.muted)),
+      if (_limitReached) ...[
+        const SizedBox(height: 16),
+        LimitReachedBox(message: tr('scan_limit_reached')),
+      ],
       if (_error != null) ...[
         const SizedBox(height: 16),
         _ErrorBox(message: _error!),

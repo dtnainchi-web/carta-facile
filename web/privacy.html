@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carta Facile – Privacy</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+  :root { --blue:#1C4E80; --ink:#0E1B2C; --muted:#5A6575; --line:#E6E9EE; --ground:#F5F6F8; --soft:#E7EEF6; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--ground); color:var(--ink);
+         font-family: "IBM Plex Sans Arabic", system-ui, -apple-system, "Segoe UI", sans-serif; line-height:1.7; }
+  header { background:var(--blue); color:#fff; padding:28px 16px; }
+  header .wrap, main { max-width:760px; margin:0 auto; }
+  header h1 { margin:0; font-size:24px; }
+  header p { margin:4px 0 0; color:#C9D8E8; font-size:14px; }
+  nav { display:flex; gap:8px; flex-wrap:wrap; margin-top:16px; }
+  nav button { min-height:44px; padding:0 16px; border-radius:22px; border:1px solid #6F93B8;
+               background:transparent; color:#fff; font:inherit; font-size:15px; cursor:pointer; }
+  nav button[aria-pressed="true"] { background:#fff; color:var(--blue); border-color:#fff; font-weight:600; }
+  main { padding:24px 16px 48px; }
+  section { display:none; background:#fff; border:1px solid var(--line); border-radius:16px; padding:8px 20px 20px; }
+  section.active { display:block; }
+  h2 { font-size:18px; margin:24px 0 6px; }
+  p, li { font-size:15px; }
+  .note { color:var(--muted); font-size:13px; margin-top:24px; }
+  a { color:var(--blue); }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Carta Facile</h1>
+    <p>Privacy · الخصوصية · Confidentialité · Privacy policy</p>
+    <nav aria-label="Lingua">
+      <button data-lang="ar">العربية</button>
+      <button data-lang="fr">Français</button>
+      <button data-lang="it">Italiano</button>
+      <button data-lang="en">English</button>
+    </nav>
+  </div>
+</header>
+<main>
+
+<section lang="it" data-lang="it">
+  <h2>Chi siamo</h2>
+  <p>Titolare del trattamento: [NOME E COGNOME DEL TITOLARE], contatto: [EMAIL DI CONTATTO].</p>
+  <h2>Nessun account</h2>
+  <p>Carta Facile si usa senza registrazione. Lingua, scadenze, liste di controllo e progressi nelle lezioni sono salvati solo sul tuo telefono. Puoi eliminarli in qualsiasi momento da Impostazioni → Elimina tutti i miei dati.</p>
+  <h2>Foto delle lettere e lettere scritte</h2>
+  <p>Quando usi "Spiega una lettera" o "Scrivi una lettera", la foto o il testo vengono inviati in modo cifrato al nostro server (Supabase) e a un servizio di intelligenza artificiale (Anthropic) solo per generare la risposta. Non conserviamo la foto né il testo dopo la risposta.</p>
+  <h2>Pubblicità</h2>
+  <p>La versione gratuita per iPhone e Android mostra annunci di Google AdMob, che può usare identificativi del dispositivo. Su iPhone ti chiediamo il permesso prima di qualsiasi tracciamento. La versione Premium non mostra annunci.</p>
+  <h2>Notifiche</h2>
+  <p>I promemoria delle scadenze sono creati sul telefono e non passano dai nostri server.</p>
+  <h2>I tuoi diritti</h2>
+  <p>Secondo il GDPR puoi chiedere accesso, correzione o cancellazione dei dati scrivendo a [EMAIL DI CONTATTO]. Puoi anche presentare reclamo al Garante per la protezione dei dati personali.</p>
+  <h2>Avviso</h2>
+  <p>Carta Facile non è un'app ufficiale della pubblica amministrazione e non fornisce consulenza legale.</p>
+  <p class="note">Ultimo aggiornamento: ottobre 2026.</p>
+</section>
+
+<section lang="ar" dir="rtl" data-lang="ar">
+  <h2>من نحن</h2>
+  <p>المسؤول عن معالجة البيانات: [الاسم الكامل]، للتواصل: [البريد الإلكتروني].</p>
+  <h2>بدون حساب</h2>
+  <p>يُستعمل Carta Facile بدون تسجيل. اللغة والمواعيد وقوائم الوثائق وتقدّمك في الدروس محفوظة في هاتفك فقط، ويمكنك حذفها في أي وقت من الإعدادات ← حذف كل بياناتي.</p>
+  <h2>صور الرسائل والرسائل المكتوبة</h2>
+  <p>عند استعمال «شرح رسالة» أو «اكتب رسالة»، تُرسَل الصورة أو النص بشكل مشفّر إلى خادمنا (Supabase) وإلى خدمة ذكاء اصطناعي (Anthropic) فقط لإعداد الجواب. لا نحتفظ بالصورة ولا بالنص بعد الجواب.</p>
+  <h2>الإعلانات</h2>
+  <p>تعرض النسخة المجانية على الآيفون وأندرويد إعلانات Google AdMob، وقد تستعمل معرّفات الجهاز. على الآيفون نطلب إذنك قبل أي تتبّع. النسخة المميزة بدون إعلانات.</p>
+  <h2>التذكيرات</h2>
+  <p>تُنشأ تذكيرات المواعيد داخل الهاتف ولا تمرّ عبر خوادمنا.</p>
+  <h2>حقوقك</h2>
+  <p>حسب قانون حماية البيانات الأوروبي (GDPR) يمكنك طلب الاطلاع على بياناتك أو تصحيحها أو حذفها بمراسلة [البريد الإلكتروني]، ويمكنك تقديم شكوى إلى هيئة حماية البيانات الإيطالية (Garante).</p>
+  <h2>تنبيه</h2>
+  <p>Carta Facile ليس تطبيقًا رسميًا للإدارة الإيطالية ولا يقدّم استشارة قانونية.</p>
+  <p class="note">آخر تحديث: أكتوبر 2026.</p>
+</section>
+
+<section lang="fr" data-lang="fr">
+  <h2>Qui sommes-nous</h2>
+  <p>Responsable du traitement : [NOM ET PRÉNOM], contact : [E-MAIL DE CONTACT].</p>
+  <h2>Aucun compte</h2>
+  <p>Carta Facile s'utilise sans inscription. La langue, les échéances, les listes et votre progression sont enregistrées uniquement sur votre téléphone. Vous pouvez tout supprimer dans Réglages → Supprimer toutes mes données.</p>
+  <h2>Photos de lettres et lettres rédigées</h2>
+  <p>Avec « Expliquer une lettre » ou « Écrire une lettre », la photo ou le texte est envoyé de façon chiffrée à notre serveur (Supabase) et à un service d'intelligence artificielle (Anthropic) uniquement pour produire la réponse. Nous ne conservons ni la photo ni le texte ensuite.</p>
+  <h2>Publicité</h2>
+  <p>La version gratuite sur iPhone et Android affiche des annonces Google AdMob, qui peuvent utiliser des identifiants de l'appareil. Sur iPhone, nous demandons votre accord avant tout suivi. La version Premium est sans publicité.</p>
+  <h2>Rappels</h2>
+  <p>Les rappels sont créés sur le téléphone et ne passent pas par nos serveurs.</p>
+  <h2>Vos droits</h2>
+  <p>Selon le RGPD, vous pouvez demander l'accès, la rectification ou l'effacement en écrivant à [E-MAIL DE CONTACT], et saisir l'autorité italienne (Garante).</p>
+  <h2>Avertissement</h2>
+  <p>Carta Facile n'est pas une application officielle de l'administration et ne fournit pas de conseil juridique.</p>
+  <p class="note">Dernière mise à jour : octobre 2026.</p>
+</section>
+
+<section lang="en" data-lang="en">
+  <h2>Who we are</h2>
+  <p>Data controller: [FULL NAME], contact: [CONTACT EMAIL].</p>
+  <h2>No account</h2>
+  <p>Carta Facile works without signing up. Your language, dates, checklists and lesson progress are saved only on your phone. You can delete them at any time in Settings → Delete all my data.</p>
+  <h2>Letter photos and written letters</h2>
+  <p>When you use "Explain a letter" or "Write a letter", the photo or text is sent encrypted to our server (Supabase) and to an AI service (Anthropic) only to produce the answer. We don't keep the photo or the text afterwards.</p>
+  <h2>Ads</h2>
+  <p>The free version on iPhone and Android shows Google AdMob ads, which may use device identifiers. On iPhone we ask your permission before any tracking. Premium has no ads.</p>
+  <h2>Reminders</h2>
+  <p>Reminders are created on your phone and don't go through our servers.</p>
+  <h2>Your rights</h2>
+  <p>Under the GDPR you can request access, correction or deletion by writing to [CONTACT EMAIL], and you can complain to the Italian data protection authority (Garante).</p>
+  <h2>Notice</h2>
+  <p>Carta Facile is not an official government app and does not give legal advice.</p>
+  <p class="note">Last updated: October 2026.</p>
+</section>
+
+</main>
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('nav button');
+    var sections = document.querySelectorAll('section');
+    function show(lang) {
+      sections.forEach(function (s) { s.classList.toggle('active', s.dataset.lang === lang); });
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.lang === lang); });
+    }
+    buttons.forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.lang); }); });
+    var wanted = (location.hash || '').replace('#', '') || (navigator.language || 'it').slice(0, 2);
+    show(['ar', 'fr', 'it', 'en'].indexOf(wanted) >= 0 ? wanted : 'it');
+  })();
+</script>
+</body>
+</html>

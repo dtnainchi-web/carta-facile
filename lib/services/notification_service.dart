@@ -84,6 +84,11 @@ class NotificationService {
     }
   }
 
+  Future<void> cancelAll() async {
+    if (!supported) return;
+    await _plugin.cancelAll();
+  }
+
   Future<void> cancelFor(TrackedDate date) async {
     if (!supported) return;
     for (final slot in _slots.values) {

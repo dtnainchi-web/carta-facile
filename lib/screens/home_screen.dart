@@ -8,6 +8,7 @@ import '../widgets/ad_banner.dart';
 import '../widgets/common.dart';
 import 'guide_screens.dart';
 import 'letter_screen.dart';
+import 'settings_screens.dart';
 import 'tools_screens.dart';
 import 'shell.dart';
 import 'tracker_screen.dart';
@@ -52,6 +53,18 @@ class HomeScreen extends StatelessWidget {
                         backgroundColor: Colors.white,
                         shape: const StadiumBorder(),
                       ),
+                    ),
+                    const SizedBox(width: 8),
+                    IconButton.outlined(
+                      tooltip: tr('settings'),
+                      style: IconButton.styleFrom(
+                        backgroundColor: Colors.white,
+                        side: const BorderSide(color: AppColors.line),
+                        minimumSize: const Size(44, 44),
+                      ),
+                      onPressed: () => Navigator.push(
+                          context, MaterialPageRoute(builder: (_) => const SettingsScreen())),
+                      icon: const Icon(Icons.settings_outlined, color: AppColors.ink),
                     ),
                   ],
                 ),

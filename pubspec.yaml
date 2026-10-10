@@ -1,7 +1,7 @@
 name: carta_facile
 description: "Carta Facile – guida ai documenti e all'italiano per chi vive in Italia."
 publish_to: 'none'
-version: 1.1.0+3
+version: 1.2.0+4
 
 environment:
   sdk: ^3.8.0
@@ -26,6 +26,19 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.1
+
+# App icon for iPhone and Android. Run before building for the phones:
+#   dart run flutter_launcher_icons
+flutter_launcher_icons:
+  image_path: "assets/icon/icon.png"
+  ios: true
+  remove_alpha_ios: true
+  android: true
+  adaptive_icon_background: "#1C4E80"
+  adaptive_icon_foreground: "assets/icon/icon_foreground_safe.png"
+  web:
+    generate: false
 
 flutter:
   uses-material-design: true

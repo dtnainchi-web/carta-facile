@@ -56,6 +56,7 @@ class TrackedDate {
 /// except the photo sent for analysis (and it is not stored on the server).
 class AppState extends ChangeNotifier {
   static const freeScansPerMonth = 3;
+  static const freeLettersPerMonth = 3;
 
   late SharedPreferences _prefs;
 
@@ -72,8 +73,11 @@ class AppState extends ChangeNotifier {
   Set<String> checkedItems = {}; // "guideId:index"
   Set<int> reminderOffsets = {60, 30};
   bool isPremium = false; // set by the subscription flow (next version)
+  bool onboarded = false;
   int _scansUsed = 0;
   String _scanMonth = '';
+  int _lettersUsed = 0;
+  String _letterMonth = '';
 
   Future<void> load() async {
     _prefs = await SharedPreferences.getInstance();
@@ -103,6 +107,9 @@ class AppState extends ChangeNotifier {
     isPremium = _prefs.getBool('isPremium') ?? false;
     _scansUsed = _prefs.getInt('scansUsed') ?? 0;
     _scanMonth = _prefs.getString('scanMonth') ?? '';
+    _lettersUsed = _prefs.getInt('lettersUsed') ?? 0;
+    _letterMonth = _prefs.getString('letterMonth') ?? '';
+    onboarded = _prefs.getBool('onboarded') ?? false;
   }
 
   // ---------- language ----------
@@ -182,7 +189,7 @@ class AppState extends ChangeNotifier {
     notifyListeners();
   }
 
-  // ---------- scans (free limit) ----------
+  // ---------- free monthly limits (AI features) ----------
   String get _thisMonth {
     final n = DateTime.now();
     return '${n.year}-${n.month}';
@@ -202,6 +209,49 @@ class AppState extends ChangeNotifier {
     _scansUsed++;
     await _prefs.setInt('scansUsed', _scansUsed);
     await _prefs.setString('scanMonth', _scanMonth);
+    notifyListeners();
+  }
+
+  int get lettersLeft {
+    if (isPremium) return 999;
+    final used = _letterMonth == _thisMonth ? _lettersUsed : 0;
+    return (freeLettersPerMonth - used).clamp(0, freeLettersPerMonth);
+  }
+
+  Future<void> registerLetter() async {
+    if (_letterMonth != _thisMonth) {
+      _letterMonth = _thisMonth;
+      _lettersUsed = 0;
+    }
+    _lettersUsed++;
+    await _prefs.setInt('lettersUsed', _lettersUsed);
+    await _prefs.setString('letterMonth', _letterMonth);
+    notifyListeners();
+  }
+
+  // ---------- onboarding & reset ----------
+  Future<void> finishOnboarding() async {
+    onboarded = true;
+    await _prefs.setBool('onboarded', true);
+    notifyListeners();
+  }
+
+  /// Deletes everything saved on this phone and cancels all reminders.
+  Future<void> deleteAllData() async {
+    await NotificationService.instance.cancelAll();
+    await _prefs.clear();
+    language = 'ar';
+    helpLanguage = 'ar';
+    dates = [];
+    completedLessons = {};
+    checkedItems = {};
+    reminderOffsets = {60, 30};
+    isPremium = false;
+    onboarded = false;
+    _scansUsed = 0;
+    _scanMonth = '';
+    _lettersUsed = 0;
+    _letterMonth = '';
     notifyListeners();
   }
 }

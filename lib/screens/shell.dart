@@ -5,6 +5,7 @@ import '../core/strings.dart';
 import 'guide_screens.dart';
 import 'home_screen.dart';
 import 'lessons_screens.dart';
+import 'onboarding_screen.dart';
 import 'scan_screen.dart';
 import 'tracker_screen.dart';
 
@@ -28,6 +29,7 @@ class Shell extends StatelessWidget {
   }
 
   Widget _build(BuildContext context, int index) {
+    if (!appState.onboarded) return const OnboardingScreen();
     return Scaffold(
         body: IndexedStack(
           index: index,
