@@ -54,6 +54,13 @@ class AppState extends ChangeNotifier {
   late SharedPreferences _prefs;
 
   String language = 'ar';
+
+  /// Translation language for lessons when the app itself is in Italian.
+  String helpLanguage = 'ar';
+
+  /// Language used for lesson translations and quiz questions.
+  String get lessonLanguage => language == 'it' ? helpLanguage : language;
+
   List<TrackedDate> dates = [];
   Set<String> completedLessons = {};
   Set<int> reminderOffsets = {60, 30};
@@ -72,6 +79,8 @@ class AppState extends ChangeNotifier {
       final phone = ui.PlatformDispatcher.instance.locale.languageCode;
       language = const ['ar', 'fr', 'it', 'en'].contains(phone) ? phone : 'ar';
     }
+
+    helpLanguage = _prefs.getString('helpLanguage') ?? 'ar';
 
     final rawDates = _prefs.getString('dates');
     if (rawDates != null) {
@@ -92,6 +101,12 @@ class AppState extends ChangeNotifier {
   Future<void> setLanguage(String code) async {
     language = code;
     await _prefs.setString('language', code);
+    notifyListeners();
+  }
+
+  Future<void> setHelpLanguage(String code) async {
+    helpLanguage = code;
+    await _prefs.setString('helpLanguage', code);
     notifyListeners();
   }
 

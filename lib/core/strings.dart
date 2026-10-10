@@ -199,6 +199,12 @@ const Map<String, Map<String, String>> _strings = {
   'lessons_word': {'ar': 'دروس', 'fr': 'leçons', 'it': 'lezioni', 'en': 'lessons'},
   'continue': {'ar': 'تابع', 'fr': 'Continuer', 'it': 'Continua', 'en': 'Continue'},
   'minutes': {'ar': 'دقائق', 'fr': 'min', 'it': 'min', 'en': 'min'},
+  'translation_in': {
+    'ar': 'الترجمة إلى:',
+    'fr': 'Traduction en :',
+    'it': 'Traduzione in:',
+    'en': 'Translation in:',
+  },
   'phrases': {'ar': 'الجمل', 'fr': 'Phrases', 'it': 'Frasi', 'en': 'Phrases'},
   'quiz': {'ar': 'تمرين', 'fr': 'Exercice', 'it': 'Esercizio', 'en': 'Quiz'},
   'correct': {

@@ -189,12 +189,15 @@ class _LessonScreenState extends State<LessonScreen> {
     super.dispose();
   }
 
-  /// Italian is the phrase; for Italian users we show the English meaning.
-  String _meaning(Phrase p) =>
-      appState.language == 'it' ? (p.meaning['en'] ?? '').toString() : pick(p.meaning);
+  /// Translation in the lesson language (Arabic/French/English).
+  String _inLessonLang(Map<String, dynamic> m) =>
+      (m[appState.lessonLanguage] ?? m['en'] ?? '').toString();
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) =>
+      ListenableBuilder(listenable: appState, builder: (context, _) => _build(context));
+
+  Widget _build(BuildContext context) {
     final text = Theme.of(context).textTheme;
     final lesson = widget.lesson;
     final answered = _chosen != null;
@@ -205,6 +208,20 @@ class _LessonScreenState extends State<LessonScreen> {
       body: ListView(
         padding: const EdgeInsets.all(20),
         children: [
+          if (appState.language == 'it') ...[
+            Text(tr('translation_in'), style: text.bodyMedium?.copyWith(color: AppColors.muted)),
+            const SizedBox(height: 8),
+            SegmentedButton<String>(
+              showSelectedIcon: false,
+              segments: [
+                for (final code in const ['ar', 'fr', 'en'])
+                  ButtonSegment(value: code, label: Text(languageNames[code]!)),
+              ],
+              selected: {appState.helpLanguage},
+              onSelectionChanged: (s) => appState.setHelpLanguage(s.first),
+            ),
+            const SizedBox(height: 20),
+          ],
           Text(tr('phrases'), style: text.titleMedium?.copyWith(fontWeight: FontWeight.w700)),
           const SizedBox(height: 10),
           for (final p in lesson.phrases) ...[
@@ -221,7 +238,10 @@ class _LessonScreenState extends State<LessonScreen> {
                               textDirection: TextDirection.ltr,
                               style: text.titleMedium?.copyWith(fontWeight: FontWeight.w600)),
                           const SizedBox(height: 4),
-                          Text(_meaning(p),
+                          Text(_inLessonLang(p.meaning),
+                              textDirection: appState.lessonLanguage == 'ar'
+                                  ? TextDirection.rtl
+                                  : TextDirection.ltr,
                               style: text.bodyMedium?.copyWith(color: AppColors.muted)),
                         ],
                       ),
@@ -240,7 +260,10 @@ class _LessonScreenState extends State<LessonScreen> {
           const SizedBox(height: 16),
           Text(tr('quiz'), style: text.titleMedium?.copyWith(fontWeight: FontWeight.w700)),
           const SizedBox(height: 8),
-          Text(pick(lesson.quiz.question), style: text.bodyLarge?.copyWith(height: 1.6)),
+          Text(_inLessonLang(lesson.quiz.question),
+              textDirection:
+                  appState.lessonLanguage == 'ar' ? TextDirection.rtl : TextDirection.ltr,
+              style: text.bodyLarge?.copyWith(height: 1.6)),
           const SizedBox(height: 12),
           for (var i = 0; i < lesson.quiz.options.length; i++) ...[
             _OptionButton(
