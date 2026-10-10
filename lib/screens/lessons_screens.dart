@@ -5,6 +5,7 @@ import '../core/app_state.dart';
 import '../core/content.dart';
 import '../core/strings.dart';
 import '../core/theme.dart';
+import '../widgets/common.dart';
 
 class LessonsScreen extends StatelessWidget {
   const LessonsScreen({super.key});
@@ -41,6 +42,10 @@ class LessonsScreen extends StatelessWidget {
           body: ListView(
             padding: const EdgeInsets.all(20),
             children: [
+              if (appState.language == 'it') ...[
+                const HelpLanguagePicker(),
+                const SizedBox(height: 16),
+              ],
               Container(
                 padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
@@ -148,8 +153,8 @@ class _LessonTile extends StatelessWidget {
                   children: [
                     Text(pick(lesson.title),
                         style: text.titleSmall?.copyWith(fontWeight: FontWeight.w600)),
-                    Text(lesson.italianTitle,
-                        textDirection: TextDirection.ltr,
+                    Text(secondLine(lesson.title, lesson.italianTitle),
+                        textDirection: secondLineDirection,
                         style: text.bodySmall?.copyWith(color: AppColors.muted)),
                   ],
                 ),
@@ -209,17 +214,7 @@ class _LessonScreenState extends State<LessonScreen> {
         padding: const EdgeInsets.all(20),
         children: [
           if (appState.language == 'it') ...[
-            Text(tr('translation_in'), style: text.bodyMedium?.copyWith(color: AppColors.muted)),
-            const SizedBox(height: 8),
-            SegmentedButton<String>(
-              showSelectedIcon: false,
-              segments: [
-                for (final code in const ['ar', 'fr', 'en'])
-                  ButtonSegment(value: code, label: Text(languageNames[code]!)),
-              ],
-              selected: {appState.helpLanguage},
-              onSelectionChanged: (s) => appState.setHelpLanguage(s.first),
-            ),
+            const HelpLanguagePicker(),
             const SizedBox(height: 20),
           ],
           Text(tr('phrases'), style: text.titleMedium?.copyWith(fontWeight: FontWeight.w700)),

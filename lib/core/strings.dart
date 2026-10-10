@@ -311,5 +311,19 @@ String pick(Map<String, dynamic>? localized) {
   return (localized[lang] ?? localized['en'] ?? localized['it'] ?? '').toString();
 }
 
+/// Second line under a title: normally the Italian name; when the app is
+/// in Italian, the title in the user's translation language instead
+/// (so the two lines never repeat the same Italian text).
+String secondLine(Map<String, dynamic> localizedTitle, String italianName) {
+  if (appState.language != 'it') return italianName;
+  final lang = appState.helpLanguage;
+  return (localizedTitle[lang] ?? localizedTitle['en'] ?? italianName).toString();
+}
+
+TextDirection get secondLineDirection =>
+    appState.language == 'it' && appState.helpLanguage == 'ar'
+        ? TextDirection.rtl
+        : TextDirection.ltr;
+
 TextDirection get appDirection =>
     appState.language == 'ar' ? TextDirection.rtl : TextDirection.ltr;

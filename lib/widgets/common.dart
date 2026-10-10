@@ -95,5 +95,29 @@ Future<void> showLanguagePicker(BuildContext context) {
   );
 }
 
+/// Shown when the app is in Italian: which language translations use.
+class HelpLanguagePicker extends StatelessWidget {
+  const HelpLanguagePicker({super.key});
+
+  @override
+  Widget build(BuildContext context) => Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(tr('translation_in'),
+              style: Theme.of(context).textTheme.bodyMedium?.copyWith(color: AppColors.muted)),
+          const SizedBox(height: 8),
+          SegmentedButton<String>(
+            showSelectedIcon: false,
+            segments: [
+              for (final code in const ['ar', 'fr', 'en'])
+                ButtonSegment(value: code, label: Text(languageNames[code]!)),
+            ],
+            selected: {appState.helpLanguage},
+            onSelectionChanged: (s) => appState.setHelpLanguage(s.first),
+          ),
+        ],
+      );
+}
+
 String formatDate(BuildContext context, DateTime d) =>
     MaterialLocalizations.of(context).formatMediumDate(d);

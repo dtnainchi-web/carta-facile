@@ -38,7 +38,8 @@ class GuideListScreen extends StatelessWidget {
                   ),
                   title: Text(pick(g.title),
                       style: text.titleSmall?.copyWith(fontWeight: FontWeight.w600)),
-                  subtitle: Text('${g.italianName} · ${g.steps.length} ${tr('steps')}',
+                  subtitle: Text(
+                      '${secondLine(g.title, g.italianName)} · ${g.steps.length} ${tr('steps')}',
                       style: text.bodySmall?.copyWith(color: AppColors.muted)),
                   trailing: const Icon(Icons.chevron_right, color: AppColors.muted),
                   onTap: () => Navigator.push(
@@ -69,7 +70,8 @@ class GuideDetailScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(pick(guide.title)),
-            Text(guide.italianName,
+            Text(secondLine(guide.title, guide.italianName),
+                textDirection: secondLineDirection,
                 style: text.bodySmall?.copyWith(color: AppColors.muted)),
           ],
         ),
